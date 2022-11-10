@@ -1,0 +1,21 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.item.java {
+
+  &::before {
+    background-color: $color_java_approx;
+  }
+
+  .info {
+
+    .title {
+    }
+
+    .date {
+
+    }
+  }
+}

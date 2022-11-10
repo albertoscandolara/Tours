@@ -1,0 +1,67 @@
+<section class="wrapper {{Color}}" [ngClass]="{'open': isOpen}">
+  <button class="moon-quarter" [title]="isOpen ? 'Close menu' : 'Open menu'" (click)="onMoonQuarterClick()">
+    <div class="moon-quarter-relative">
+      <div class="waves-container">
+        <div class="waves-container-relative">
+          <div #waves class="waves"></div>
+          <img class="inner-toggler-icon">
+        </div>
+      </div>
+    </div>
+  </button>
+  <section class="svg-menu-wrapper">
+    <svg #svgMenu version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 350 250" enable-background="new 0 0 64 64" xml:space="preserve">
+      <path d="M0,60 L113,60 C113,60 228,59 229,60 C230,61 279,60 300,60 C321,60 371,61 371,60 L371,0 L0,0 L0,60 Z">
+        <animate fill="freeze" attributeName="d" begin="indefinite" dur="100ms"
+          to="M0,60 L113,60 C113,60 228,59 229,60 C230,61 279,60 300,60 C321,60 371,61 371,60 L371,0 L0,0 L0,60 Z" />
+        <animate fill="freeze" attributeName="d" begin="indefinite" dur="100ms"
+          to="M0,60 L113,60 C113,60 214.336411,103.306838 228,109 C240,114 279,129 300,131 C321,133 371,89 371,82 L371,0 L0,0 L0,60 Z" />
+        <animate fill="freeze" attributeName="d" begin="indefinite" dur="200ms"
+          to="M0,60 L85.9157895,60 C85.9157895,60 152,58 204,139 C253.616309,216.286943 281,205 299,209 C317,213 371,184 371,177 L371,0 L0,0 L0,60 Z" />
+        <animate fill="freeze" attributeName="d" begin="indefinite" dur="250ms"
+          to="M0,60 L85.9157895,60 C85.9157895,60 159,60 200,139 C241.386531,218.744779 261,222 294,225 C327,228 371,201 371,194 L371,0 L0,0 L0,60 Z" />
+      </path>
+
+      <g class="circles-group" transform="translate(-20 0)">
+        <g class="circle" (click)="onClickInfo()">
+          <title>Show information</title>
+          <circle class="back-circle" r="22" fill="#ffffff"></circle>
+          <svg as-info-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="0"></svg>
+
+          <animateMotion attributeType="xml" begin="indefinite" fill="freeze" repeatCount="1" calcMode="spline"
+            keyTimes="0; 1"
+            path="M125,26 C170,26 191,51 222,91 C253,131 269.184608,182.272934 306,185 C333,187 338,177 338,189"
+            rotate="0" />
+
+          <animateTransform attributeType="xml" attributeName="transform" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.7 0 1 1" begin="indefinite" type="rotate" repeatCount="1" />
+        </g>
+
+        <g class="circle" (click)="onClickEmail()">
+          <title>Write us</title>
+          <circle class="back-circle" r="22" fill="#ffffff"></circle>
+          <svg as-email-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="2"></svg>
+
+          <animateMotion attributeType="xml" begin="indefinite" fill="freeze" repeatCount="1" calcMode="spline"
+            keyTimes="0; 1" path="M125,26 C170,26 191,51 222,91 C244.666619,120.247251 265,174 279,171" rotate="0" />
+
+          <animateTransform attributeType="xml" attributeName="transform" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.7 0 1 1" begin="indefinite" type="rotate" repeatCount="1" />
+        </g>
+
+        <g class="circle" (click)="onClickGallery()">
+          <title>See gallery</title>
+          <circle class="back-circle" r="22" fill="#ffffff"></circle>
+          <svg as-camera-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="5"></svg>
+
+          <animateMotion attributeType="xml" begin="indefinite" fill="freeze" repeatCount="1" calcMode="spline"
+            keyTimes="0; 1" path="M125,26 C170,26 189.45981,51.9517711 222,91 C232,103 242,131 245,121" rotate="0" />
+
+          <animateTransform attributeType="xml" attributeName="transform" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.7 0 1 1" begin="indefinite" type="rotate" repeatCount="1" />
+        </g>
+      </g>
+    </svg>
+  </section>
+</section>

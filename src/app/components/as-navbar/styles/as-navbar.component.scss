@@ -1,0 +1,20 @@
+@import '../../../../styles/palette.scss';
+
+.navbar {
+  min-height: 45px;
+  max-height: 350px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color_fiord_approx;
+  box-shadow: 2px 2px 9px 3px rgb(0 0 0 / 86%);
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+}

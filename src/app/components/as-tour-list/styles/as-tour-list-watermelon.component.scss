@@ -1,0 +1,21 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.item.watermelon {
+
+  &::before {
+    background-color: $color_wild_watermelon_approx;
+  }
+
+  .info {
+
+    .title {
+    }
+
+    .date {
+
+    }
+  }
+}

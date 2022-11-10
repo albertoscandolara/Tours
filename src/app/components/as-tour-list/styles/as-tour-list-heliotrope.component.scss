@@ -1,0 +1,21 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.item.heliotrope {
+
+  &::before {
+    background-color: $color_heliotrope_approx;
+  }
+
+  .info {
+
+    .title {
+    }
+
+    .date {
+
+    }
+  }
+}

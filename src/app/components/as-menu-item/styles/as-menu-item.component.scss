@@ -1,0 +1,146 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+
+  .moon-quarter {
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    aspect-ratio: 1;
+    width: 40%;
+    min-width: 140px;
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+
+    .moon-quarter-relative{
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .waves-container {
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        top: 60%;
+        right: 60%;
+        transform: translateX(20%);
+
+        .waves-container-relative {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+          .waves {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            &.animate {
+              animation: .3s 1 cubic-bezier(.76, .01, 1, .93) fade-click;
+            }
+          }
+
+          .inner-toggler-icon {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            content:url("../../../../assets/icons/arrow-down.svg");
+          }
+        }
+      }
+    }
+  }
+
+  .svg-menu-wrapper{
+    position: absolute;
+    z-index: 2;
+    top: -26%;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      .circles-group {
+        .circle {
+          as-info-svg {
+          }
+
+          as-email-svg {
+          }
+
+          as-camera-svg {
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    .moon-quarter {
+
+      .moon-quarter-relative{
+
+        .waves-container {
+
+          .waves-container-relative {
+
+            .waves {
+
+              &.animate {
+              }
+            }
+
+            .inner-toggler-icon {
+              position: absolute;
+              height: 100%;
+              width: 50%;
+              content:url("../../../../assets/icons/line.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes bubbleScale {
+	0% {
+    transform: scale(0);
+	}
+	50% {
+    transform: scale(1.2);
+	}
+	100% {
+    transform: scale(.7);
+	}
+}
+
+@keyframes fade-click {
+	0% {
+		background: $color_celeste_approx;
+		transform: scale(1.0);
+	}
+	10% {
+		background: $color_celeste_approx;
+	}
+	25% {
+		transform: scale(0.8);
+	}
+	100% {
+		background: none;
+		transform: scale(1.3);
+	}
+}

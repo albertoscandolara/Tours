@@ -1,0 +1,31 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "Sidney",
+      "date": "2022/11/07",
+      "description": "A nice tour",
+      "imagesSignatures": [],
+      "visible": true,
+      "previewImageSignature": "Sydney.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Melbourne",
+      "date": "2022/11/07",
+      "description": "Another nice tour",
+      "imagesSignatures": ["Melbourne.jpg"],
+      "visible": true,
+      "previewImageSignature": ""
+    },
+    {
+      "id": 3,
+      "title": "Canberra",
+      "date": "2022/11/07",
+      "description": "A third nice tour",
+      "imagesSignatures": ["Canberra.jpg"],
+      "visible": true,
+      "previewImageSignature": "Canberra.jpg"
+    }
+  ]
+}

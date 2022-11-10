@@ -1,0 +1,7 @@
+<section class="tours">
+  <ng-container *ngIf="tours.length">
+    <ng-container *ngFor="let tour of tours">
+      <as-tour-list [Tour]="tour" (OnToggleMenu)="onToggleMenu($event)"></as-tour-list>
+    </ng-container>
+  </ng-container>
+</section>

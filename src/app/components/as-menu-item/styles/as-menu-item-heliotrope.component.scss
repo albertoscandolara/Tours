@@ -1,0 +1,74 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.heliotrope {
+
+  .moon-quarter {
+    background-color: $color_fuchsia_pink_approx;
+
+    .moon-quarter-relative{
+
+      .waves-container {
+
+        .waves-container-relative {
+
+          .waves {
+
+            &.animate {
+            }
+          }
+
+          .inner-toggler-icon {
+          }
+        }
+      }
+    }
+  }
+
+  .svg-menu-wrapper{
+    svg {
+      fill: $color_glicine_approx;
+
+      .circles-group {
+        .circle {
+          as-info-svg {
+          }
+
+          as-email-svg {
+          }
+
+          as-camera-svg {
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    .moon-quarter {
+
+      .moon-quarter-relative{
+
+        .waves-container {
+
+          .waves-container-relative {
+
+            .waves {
+
+              &.animate {
+              }
+            }
+
+            .inner-toggler-icon {
+            }
+          }
+        }
+      }
+    }
+
+    .svg-menu-wrapper{
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.watermelon {
+
+  .moon-quarter {
+    background-color: $color_crimson_approx;
+
+    .moon-quarter-relative{
+
+      .waves-container {
+
+        .waves-container-relative {
+
+          .waves {
+
+            &.animate {
+            }
+          }
+
+          .inner-toggler-icon {
+          }
+        }
+      }
+    }
+  }
+
+  .svg-menu-wrapper{
+    svg {
+      fill: $color_cerise_red_approx;
+
+      .circles-group {
+        .circle {
+          as-info-svg {
+          }
+
+          as-email-svg {
+          }
+
+          as-camera-svg {
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    .moon-quarter {
+
+      .moon-quarter-relative{
+
+        .waves-container {
+
+          .waves-container-relative {
+
+            .waves {
+
+              &.animate {
+              }
+            }
+
+            .inner-toggler-icon {
+            }
+          }
+        }
+      }
+    }
+
+    .svg-menu-wrapper{
+    }
+  }
+}

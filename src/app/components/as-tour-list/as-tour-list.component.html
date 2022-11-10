@@ -1,0 +1,13 @@
+<ng-container *ngIf="Tour">
+  <div class="item {{Tour.color || Colors.WATERMELON}}"
+    [ngStyle]="{'background-image': 'url(' + previewImagePath + ')' }">
+    <as-menu-item [Color]="Tour.color || Colors.WATERMELON" [IsOpen]="Tour.mainMenuOpen || false"
+      (OnToggleMenu)="onToggleMenu()" (OnClickGallery)="onClickGallery()" (OnClickInfo)="onClickInfo()"
+      (OnClickEmail)="onClickEmail()">
+    </as-menu-item>
+    <section class="info">
+      <span class="title">{{Tour.title}}</span>
+      <span class="date">{{Tour.date | date: 'short'}}</span>
+    </section>
+  </div>
+</ng-container>

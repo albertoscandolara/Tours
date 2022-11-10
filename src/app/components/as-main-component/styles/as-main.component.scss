@@ -1,0 +1,13 @@
+section {
+  display: flex;
+  flex-direction: column;
+  as-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+  }
+
+  as-tours-list {
+    flex: 1;
+  }
+}
