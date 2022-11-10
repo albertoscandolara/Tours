@@ -1,8 +1,7 @@
 import { EventEmitter, SimpleChanges } from '@angular/core';
 
 import { Component, ElementRef, Input, Output, ViewChild } from '@angular/core';
-import { COLORS } from 'src/app/enums/card-colors';
-import { MenuButton } from 'src/app/models/main-menu';
+import { COLORS } from 'src/app/enums/colors';
 
 /**
  * Tour item menu, comprehending moon-quarter button to toggle it, as well as tour navigation buttons

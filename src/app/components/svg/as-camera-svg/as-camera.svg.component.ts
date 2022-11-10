@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { COLORS } from 'src/app/enums/card-colors';
+import { COLORS } from 'src/app/enums/colors';
 
 @Component({
   selector: '[as-camera-svg]',

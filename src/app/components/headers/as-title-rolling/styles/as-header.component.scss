@@ -1,0 +1,53 @@
+@import '../../../../../styles/built-in-tags.scss';
+
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 45px;
+  max-height: 350px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  .left-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    .rolling-svg-container {
+      height: 100%;
+
+      &> svg {
+        display: block;
+        margin: auto;
+        transform-origin: 50% 50%;
+      }
+    }
+
+    .title {
+      padding: 0 10px
+    }
+  }
+
+  .right-side {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    button {
+      height: 100%;
+      aspect-ratio: 1/1;
+      padding: 15%;
+
+      &> svg {
+        display: block;
+        margin: auto;
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+}

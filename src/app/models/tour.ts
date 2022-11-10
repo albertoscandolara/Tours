@@ -1,4 +1,4 @@
-import { COLORS } from '../enums/card-colors';
+import { COLORS } from '../enums/colors';
 
 export interface Tour {
   id: number;
@@ -8,7 +8,8 @@ export interface Tour {
   imagesSignatures: Array<string>;
   mainMenuOpen: boolean;
   visible: boolean;
-  color?: COLORS;
+  currentAction: string;
+  color: COLORS;
   previewImageSignature?: string;
 }
 

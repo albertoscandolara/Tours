@@ -1,0 +1,9 @@
+@import '../../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.watermelon {
+  background-color: $color_crimson_approx;
+  color: $light;
+}

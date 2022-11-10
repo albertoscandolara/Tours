@@ -1,0 +1,9 @@
+@import '../../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.heliotrope {
+  background-color: $color_fuchsia_pink_approx;
+  color: $light;
+}

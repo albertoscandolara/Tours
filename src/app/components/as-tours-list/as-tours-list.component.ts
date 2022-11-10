@@ -3,7 +3,8 @@ import { Component, Input } from '@angular/core';
 import json from '../../configurations/tours.json';
 
 import { Tour, TourConfig } from 'src/app/models/tour';
-import { COLORS } from 'src/app/enums/card-colors';
+import { COLORS } from 'src/app/enums/colors';
+import { STRING_EMPTY } from 'src/app/constants/constants';
 
 @Component({
   selector: 'as-tours-list',
@@ -40,6 +41,7 @@ export class AsToursListComponent {
       imagesSignatures: tour.imagesSignatures,
       mainMenuOpen: false,
       visible: tour.visible ?? true,
+      currentAction: STRING_EMPTY,
       color: this._setColor(index),
       previewImageSignature: this._setPreviewImage(tour),
     };
@@ -62,10 +64,16 @@ export class AsToursListComponent {
    * @returns {COLORS} one of COLORS enum entries
    */
   private _setColor(index: number): COLORS {
-    let color: COLORS = COLORS.WATERMELON;
+    const defaultColor: COLORS = COLORS.WATERMELON;
+    let color: COLORS = defaultColor;
 
-    const colorsCount: number = Object.keys(COLORS).length;
-    color = Object.values(COLORS)[index % colorsCount];
+    const colorsToExclude: Array<COLORS> = [COLORS.LIGHT, COLORS.DARK];
+    const selectableColors: Array<string> = Object.values(COLORS).filter(
+      (value) => !Object.values(colorsToExclude).includes(value)
+    );
+
+    const colorsCount: number = selectableColors.length;
+    color = selectableColors[index % colorsCount] as COLORS;
 
     return color;
   }

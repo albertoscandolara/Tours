@@ -1,0 +1,9 @@
+@import '../../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.java {
+  background-color: $color_caribbean_green_approx;
+  color: $light;
+}

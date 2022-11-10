@@ -1,5 +1,7 @@
 export enum COLORS {
+  LIGHT = 'light',
+  DARK = 'dark',
   WATERMELON = 'watermelon',
-  JAVA = 'java',
   HELIOTROPE = 'heliotrope',
+  JAVA = 'java',
 }

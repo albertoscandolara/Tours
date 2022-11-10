@@ -2,7 +2,7 @@ import { outputAst } from '@angular/compiler';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { STRING_EMPTY } from 'src/app/constants/constants';
 import { toursImagesFolderPath } from 'src/app/constants/paths';
-import { COLORS } from 'src/app/enums/card-colors';
+import { COLORS } from 'src/app/enums/colors';
 import { Tour } from 'src/app/models/tour';
 
 @Component({
@@ -20,6 +20,11 @@ export class AsTourListComponent implements OnInit {
    * Colors enum
    */
   public Colors = COLORS;
+
+  /**
+   * If true, modal is open
+   */
+  public isModalOpen: boolean = false;
 
   /**
    * Tour configuration object
@@ -56,20 +61,58 @@ export class AsTourListComponent implements OnInit {
    * Gallery button click handler
    */
   public onClickGallery(): void {
-    console.log('onGalleryClick');
+    this.onModalOpen();
+
+    this.Tour.currentAction = this.isModalOpen ? 'gallery' : STRING_EMPTY;
   }
 
   /**
    * Info button click handler
+   *
+   * @returns {void}
    */
   public onClickInfo(): void {
-    console.log('onInfoClick');
+    this.onModalOpen();
+
+    this.Tour.currentAction = this.isModalOpen ? 'info' : STRING_EMPTY;
   }
 
   /**
    * Mail button click handler
+   *
+   * @returns {void}
    */
   public onClickEmail(): void {
-    console.log('onMailClick');
+    this.onModalOpen();
+
+    this.Tour.currentAction = this.isModalOpen ? 'email' : STRING_EMPTY;
+  }
+
+  /**
+   * Handle modal closing event
+   *
+   * @returns {void}
+   */
+  public onModalClose(): void {
+    this._toggleModalOpening(false);
+  }
+
+  /**
+   * Handle modal opening event
+   *
+   * @returns {void}
+   */
+  public onModalOpen(): void {
+    this._toggleModalOpening(true);
+  }
+
+  /**
+   * Handle modal toggling event
+   * @param {boolean} value modal state to set
+   *
+   * @returns {void}
+   */
+  public _toggleModalOpening(value: boolean | undefined = undefined) {
+    this.isModalOpen = value ?? !this.isModalOpen;
   }
 }

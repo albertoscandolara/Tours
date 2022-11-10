@@ -11,3 +11,9 @@
     </section>
   </div>
 </ng-container>
+
+<ng-container *ngIf="isModalOpen">
+  <as-modal (OnClose)="onModalClose()">
+    <as-action [Tour]="Tour" (OnClose)="onModalClose()"></as-action>
+  </as-modal>
+</ng-container>
