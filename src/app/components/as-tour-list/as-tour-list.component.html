@@ -1,6 +1,6 @@
 <ng-container *ngIf="Tour">
   <div class="item {{Tour.color || Colors.WATERMELON}}"
-    [ngStyle]="{'background-image': 'url(' + previewImagePath + ')' }">
+    [ngStyle]="{'background-image': 'url(' + Tour.previewImageSignature + ')' }">
     <as-menu-item [Color]="Tour.color || Colors.WATERMELON" [IsOpen]="Tour.mainMenuOpen || false"
       (OnToggleMenu)="onToggleMenu()" (OnClickGallery)="onClickGallery()" (OnClickInfo)="onClickInfo()"
       (OnClickEmail)="onClickEmail()">

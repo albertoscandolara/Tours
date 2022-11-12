@@ -20,6 +20,9 @@ import { AsMainComponent } from './components/as-main/as-main.component';
 import { AsModalComponent } from './components/modals/as-modal/as-modal.component';
 import { AsHeaderComponent } from './components/headers/as-title-rolling/as-header.component';
 import { AsActionComponent } from './components/sections/as-action/as-action.component';
+import { AsEmailComponent } from './components/sections/as-email/as-email.component';
+import { AsGalleryComponent } from './components/sections/as-gallery/as-gallery.component';
+import { AsInfoComponent } from './components/sections/as-info/as-info.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { AsActionComponent } from './components/sections/as-action/as-action.com
     AsModalComponent,
     AsActionComponent,
     AsHeaderComponent,
+    AsEmailComponent,
+    AsGalleryComponent,
+    AsInfoComponent,
   ],
   imports: [CommonModule, BrowserModule, AppRoutingModule],
   providers: [],

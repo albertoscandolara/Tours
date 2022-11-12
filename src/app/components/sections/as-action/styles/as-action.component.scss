@@ -1,6 +1,7 @@
 :host {
   max-height: 95%;
   width: 95%;
+  overflow: auto;
 }
 
 .modal-wrapper {
@@ -11,5 +12,6 @@
 
   .body {
     flex: 1;
+    min-height: 30vh;
   }
 }

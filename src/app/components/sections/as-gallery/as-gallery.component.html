@@ -1,0 +1,14 @@
+<section class="wrapper {{Tour.color}}">
+  <ul class="items">
+    <ng-container *ngIf="Tour.imagesSignatures.length === 0">
+      <li class="item">
+        <span>No images available</span>
+      </li>
+    </ng-container>
+    <ng-container *ngFor="let path of Tour.imagesSignatures">
+      <li class="item">
+        <img src="{{path}}">
+      </li>
+    </ng-container>
+  </ul>
+</section>

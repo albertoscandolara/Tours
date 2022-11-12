@@ -1,6 +1,20 @@
 <div class="modal-wrapper {{Tour.color}}">
   <as-header [Action]="action" [Color]="Tour.color" (OnClose)="onClose()"></as-header>
   <section class="body">
-
+    <ng-container [ngSwitch]="action.id">
+      <ng-container *ngSwitchCase="0" [ngTemplateOutlet]="email"></ng-container>
+      <ng-container *ngSwitchCase="1" [ngTemplateOutlet]="gallery"></ng-container>
+      <ng-container *ngSwitchCase="2" [ngTemplateOutlet]="info"></ng-container>
+    </ng-container>
   </section>
 </div>
+
+<ng-template #email>
+  <as-email [Tour]="Tour"></as-email>
+</ng-template>
+<ng-template #gallery>
+  <as-gallery [Tour]="Tour"></as-gallery>
+</ng-template>
+<ng-template #info>
+  <as-info [Tour]="Tour"></as-info>
+</ng-template>

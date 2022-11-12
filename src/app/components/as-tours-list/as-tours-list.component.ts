@@ -5,6 +5,7 @@ import json from '../../configurations/tours.json';
 import { Tour, TourConfig } from 'src/app/models/tour';
 import { COLORS } from 'src/app/enums/colors';
 import { STRING_EMPTY } from 'src/app/constants/constants';
+import { toursImagesFolderPath } from 'src/app/constants/paths';
 
 @Component({
   selector: 'as-tours-list',
@@ -38,7 +39,7 @@ export class AsToursListComponent {
       title: tour.title,
       date: this._setDate(tour.date),
       description: tour.description,
-      imagesSignatures: tour.imagesSignatures,
+      imagesSignatures: this._setImagePaths(tour),
       mainMenuOpen: false,
       visible: tour.visible ?? true,
       currentAction: STRING_EMPTY,
@@ -56,6 +57,19 @@ export class AsToursListComponent {
    */
   private _setDate(date: string): Date {
     return new Date(date);
+  }
+
+  /**
+   * Prepend images path to images signature
+   * @param {TourConfig} tour tour JSON configuration
+   *
+   * @returns {Array<string>} an array containing path/signature images
+   */
+  private _setImagePaths(tour: TourConfig): Array<string> {
+    const signatures: Array<string> = tour.imagesSignatures.map(
+      (signature) => `${toursImagesFolderPath}/${tour.id}/${signature}`
+    );
+    return signatures;
   }
 
   /**
@@ -92,6 +106,10 @@ export class AsToursListComponent {
       } else {
         console.warn('Missing preview image');
       }
+    }
+
+    if (signature) {
+      signature = `${toursImagesFolderPath}/${tour.id}/${signature}`;
     }
 
     return signature;

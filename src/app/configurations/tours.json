@@ -5,7 +5,12 @@
       "title": "Sydney",
       "date": "2022/11/07",
       "description": "A nice tour",
-      "imagesSignatures": [],
+      "imagesSignatures": [
+        "Sydney.jpg",
+        "Fireworks.jpg",
+        "Opera house.jpg",
+        "Skylines.jpg"
+      ],
       "visible": true,
       "previewImageSignature": "Sydney.jpg"
     },

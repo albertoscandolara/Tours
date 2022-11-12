@@ -15,7 +15,7 @@ import { Tour } from 'src/app/models/tour';
     './styles/as-tour-list-watermelon.component.scss',
   ],
 })
-export class AsTourListComponent implements OnInit {
+export class AsTourListComponent {
   /**
    * Colors enum
    */
@@ -37,18 +37,9 @@ export class AsTourListComponent implements OnInit {
   @Output() OnToggleMenu: EventEmitter<Tour> = new EventEmitter<Tour>();
 
   /**
-   * Images folder path
-   */
-  public previewImagePath: string = STRING_EMPTY;
-
-  /**
    * Constructor
    */
   constructor() {}
-
-  ngOnInit(): void {
-    this.previewImagePath = `${toursImagesFolderPath}/${this.Tour.id}/${this.Tour.previewImageSignature}`;
-  }
 
   /**
    * Menu toggler handler
