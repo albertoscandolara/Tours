@@ -1,5 +1,6 @@
-<section class="wrapper {{Color}}" [ngClass]="{'open': isOpen}">
-  <button class="moon-quarter" [title]="isOpen ? 'Close menu' : 'Open menu'" (click)="onMoonQuarterClick()">
+<section class="wrapper {{Color}}" #item [ngClass]="{'open': isOpen}">
+  <button class="moon-quarter" [title]="isOpen ? 'Close menu' : 'Open menu'"
+    (click)="scroll(item); onMoonQuarterClick()">
     <div class="moon-quarter-relative">
       <div class="waves-container">
         <div class="waves-container-relative">

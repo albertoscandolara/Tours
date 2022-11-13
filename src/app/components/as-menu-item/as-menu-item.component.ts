@@ -201,15 +201,37 @@ export class AsMenuItemComponent {
     });
   }
 
+  /**
+   * Email click handler
+   */
   public onClickEmail(): void {
     this.OnClickEmail.emit();
   }
 
+  /**
+   * Info click handler
+   */
   public onClickInfo(): void {
     this.OnClickInfo.emit();
   }
 
+  /**
+   * Gallery click handler
+   */
   public onClickGallery(): void {
     this.OnClickGallery.emit();
+  }
+
+  /**
+   * Scroll view until provided HTML element is centered
+   * @param {HTMLElement} el te element to be centered into view
+   */
+  public scroll(el: HTMLElement) {
+    const scrollIntoViewOptions: any = {
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center',
+    };
+    el.scrollIntoView(scrollIntoViewOptions);
   }
 }

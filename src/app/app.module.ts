@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +44,13 @@ import { AsInfoComponent } from './components/sections/as-info/as-info.component
     AsGalleryComponent,
     AsInfoComponent,
   ],
-  imports: [CommonModule, BrowserModule, AppRoutingModule],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
