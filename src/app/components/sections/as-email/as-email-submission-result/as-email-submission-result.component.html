@@ -1,0 +1,13 @@
+<section class="wrapper {{Color}}">
+  <div class="inner">
+    <ng-content></ng-content>
+  </div>
+  <div class="buttons-container">
+    <ng-container *ngIf="enableOk">
+      <button (click)="onOk()">Ok</button>
+    </ng-container>
+    <ng-container *ngIf="enableRetry">
+      <button (click)="onRetry()">Retry</button>
+    </ng-container>
+  </div>
+</section>

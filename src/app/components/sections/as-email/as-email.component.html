@@ -1,25 +1,28 @@
 <section class="wrapper {{Tour.color}}">
-  <ng-container *ngIf="emailSubmitting">
+  <!-- Form component -->
+  <as-email-form
+    [ngClass]="{'slide-in': !submitting && !submitOk && !submitError, 'slide-out' : !retrying && submitting && !submitOk && !submitError }"
+    [Tour]="Tour" (OnSubmitting)="onSubmitting()" (OnSubmitError)="onSubmitError()" (OnSubmitOk)="onSubmitSuccess()">
+  </as-email-form>
 
-  </ng-container>
-  <form [formGroup]="emailForm" class="emailForm" (ngSubmit)="onClickSubmit($event)">
-    <label>
-      <span>Subject:</span>
-      <input formControlName="subject" name='subject' type="text" placeholder="Email subject..." />
-    </label>
-    <label>
-      <span>To:</span>
-      <input formControlName="to" name='to' type="email" placeholder="Email recipient..." readonly />
-    </label>
-    <label>
-      <span>From:</span>
-      <input formControlName="from" name='from' type="email" placeholder="Your email..." />
-    </label>
-    <label>
-      <span>Message:</span>
-      <textarea formControlName="message" name='message' type="text" placeholder="Your Message..."></textarea>
-    </label>
+  <!-- Spinner component -->
+  <as-email-processing [ngClass]="{'slide-in': submitting, 'slide-out' : !submitting && (submitOk || submitError) }"
+    [Color]="Tour.color" [Text]="'Sending email...'"></as-email-processing>
 
-    <button type="submit" disabled="{{emailForm.invalid ? emailForm.invalid: null}}">Send email</button>
-  </form>
+  <!-- Success component -->
+  <as-email-submission-result [ngClass]="{'slide-in': !submitting && submitOk && !submitError }" [Color]="Tour.color"
+    [enableOk]="true" (OnOk)="onClose()">
+    <span>Email has been sent correctly</span>
+  </as-email-submission-result>
+
+  <!-- Error component -->
+  <as-email-submission-result
+    [ngClass]="{'slide-in': !submitting && !submitOk && submitError, 'slide-out' : retrying || !firstTime && !submitting && !submitOk && !submitError }"
+    [Color]="Tour.color" [enableOk]="true" [enableRetry]="true" (OnOk)="onUndo()" (OnRetry)="onRetry()">
+    <span>Ouch, we could not send your email.</span>
+    <span>Please, retry or write us at</span>
+    <span><strong>{{email}}</strong>,</span>
+    <span>letting us know about this issue.</span>
+    <span>We apologize for the inconvenient.</span>
+  </as-email-submission-result>
 </section>

@@ -39,7 +39,7 @@ export class AsHeaderComponent {
   /**
    * Closing event emitter
    */
-  @Output() OnClose: EventEmitter<any> = new EventEmitter<any>();
+  @Output() OnClose: EventEmitter<void> = new EventEmitter<void>();
 
   /**
    * Constructor

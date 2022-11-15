@@ -25,6 +25,11 @@ export class AsToursListComponent {
     this._setTours();
   }
 
+  /**
+   * Set tours list
+   *
+   * @returns {void}
+   */
   private _setTours(): void {
     const tours: Array<TourConfig> = json.tours;
 
@@ -33,12 +38,18 @@ export class AsToursListComponent {
     });
   }
 
+  /**
+   * Set single tour
+   *
+   * @returns {void}
+   */
   private _setTour(tour: TourConfig, index: number): void {
     const t: Tour = {
       id: tour.id,
       title: tour.title,
       date: this._setDate(tour.date),
       description: tour.description,
+      start: tour.start,
       imagesSignatures: this._setImagePaths(tour),
       mainMenuOpen: false,
       visible: tour.visible ?? true,
@@ -116,10 +127,12 @@ export class AsToursListComponent {
   }
 
   /**
+   * Manage menu opening, all other svg menus must close
    *
-   * @param tour
+   * @param tour tour whose svg menu has been toggled
+   * @returns {void}
    */
-  public onToggleMenu(tour: Tour) {
+  public onToggleMenu(tour: Tour): void {
     this.tours.forEach((t: Tour) => {
       if (t.id === tour.id) {
         t.mainMenuOpen = !t.mainMenuOpen;

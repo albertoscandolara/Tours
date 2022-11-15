@@ -5,6 +5,7 @@ export interface Tour {
   title: string;
   date: Date;
   description: string;
+  start: Start;
   imagesSignatures: Array<string>;
   mainMenuOpen: boolean;
   visible: boolean;
@@ -18,8 +19,16 @@ export interface TourConfig {
   title: string;
   date: string;
   description: string;
+  start: Start;
   imagesSignatures: Array<string>;
   visible?: boolean;
   previewImageSignature?: string;
   color?: COLORS;
+}
+
+interface Start {
+  country: string;
+  city: string;
+  street: string;
+  number?: number;
 }

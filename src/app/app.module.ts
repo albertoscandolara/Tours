@@ -11,6 +11,7 @@ import { AsCrossSvgComponent } from './components/svg/as-cross-svg/as-cross.svg.
 import { AsEmailSvgComponent } from './components/svg/as-email-svg/as-email.svg.component';
 import { AsCameraSvgComponent } from './components/svg/as-camera-svg/as-camera.svg.component';
 import { AsInfoSvgComponent } from './components/svg/as-info-svg/as-info.svg.component';
+import { AsSpinnerSvgComponent } from './components/svg/as-spinner-svg/as-spinner.svg.component';
 
 // other components
 import { AsMenuItemComponent } from './components/as-menu-item/as-menu-item.component';
@@ -24,6 +25,9 @@ import { AsActionComponent } from './components/sections/as-action/as-action.com
 import { AsEmailComponent } from './components/sections/as-email/as-email.component';
 import { AsGalleryComponent } from './components/sections/as-gallery/as-gallery.component';
 import { AsInfoComponent } from './components/sections/as-info/as-info.component';
+import { AsEmailFormComponent } from './components/sections/as-email/as-email-form/as-email-form.component';
+import { AsEmailProcessingComponent } from './components/sections/as-email/as-email-processing/as-email-processing.component';
+import { AsEmailSubmissionResultComponent } from './components/sections/as-email/as-email-submission-result/as-email-submission-result.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { AsInfoComponent } from './components/sections/as-info/as-info.component
     AsCrossSvgComponent,
     AsEmailSvgComponent,
     AsInfoSvgComponent,
+    AsSpinnerSvgComponent,
     AsMenuItemComponent,
     AsTourListComponent,
     AsToursListComponent,
@@ -43,6 +48,9 @@ import { AsInfoComponent } from './components/sections/as-info/as-info.component
     AsEmailComponent,
     AsGalleryComponent,
     AsInfoComponent,
+    AsEmailFormComponent,
+    AsEmailProcessingComponent,
+    AsEmailSubmissionResultComponent,
   ],
   imports: [
     CommonModule,

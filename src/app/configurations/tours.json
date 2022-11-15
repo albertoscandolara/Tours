@@ -5,6 +5,12 @@
       "title": "Sydney",
       "date": "2022/11/07",
       "description": "A nice tour",
+      "start": {
+        "country": "Australia",
+        "city": "Sydney",
+        "street": "Macquarie St",
+        "number": 0
+      },
       "imagesSignatures": [
         "Sydney.jpg",
         "Fireworks.jpg",
@@ -19,7 +25,13 @@
       "title": "Melbourne",
       "date": "2022/11/07",
       "description": "Another nice tour",
-      "imagesSignatures": ["Melbourne.jpg"],
+      "start": {
+        "country": "Australia",
+        "city": "Melbourne",
+        "street": "St Kilda Rd",
+        "number": 3
+      },
+      "imagesSignatures": ["Melbourne.jpg", "Skylines.jpg"],
       "visible": true,
       "previewImageSignature": ""
     },
@@ -28,7 +40,17 @@
       "title": "Canberra",
       "date": "2022/11/07",
       "description": "A third nice tour",
-      "imagesSignatures": ["Canberra.jpg"],
+      "start": {
+        "country": "Australia",
+        "city": "Canberra",
+        "street": "London Cct",
+        "number": 5
+      },
+      "imagesSignatures": [
+        "Canberra.jpg",
+        "Parliament.jpg",
+        "National arboretum.jpg"
+      ],
       "visible": true,
       "previewImageSignature": "Canberra.jpg"
     }

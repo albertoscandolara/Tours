@@ -52,7 +52,7 @@ export class AsActionComponent {
   }
 
   /**
-   * Notify closing request to parent
+   * Closing event emitter
    */
   @Output() OnClose: EventEmitter<void> = new EventEmitter<void>();
 

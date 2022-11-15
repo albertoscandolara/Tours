@@ -1,0 +1,38 @@
+<section class="wrapper {{Tour.color}}">
+  <form #form="ngForm" [formGroup]="emailForm" class="emailForm" (ngSubmit)="onFormSubmit()">
+    <label>
+      <span>Subject:</span>
+      <input formControlName="subject" name='subject' type="text" placeholder="Email subject..." />
+    </label>
+    <label>
+      <span>To:</span>
+      <input formControlName="to" name='to' type="email" placeholder="Email recipient..." readonly />
+    </label>
+    <label>
+      <span>From:</span>
+      <input formControlName="from" name='from' type="email" placeholder="Your email..." />
+    </label>
+    <label>
+      <span>Message:</span>
+      <textarea formControlName="message" name='message' type="text" placeholder="Your Message..."></textarea>
+    </label>
+    <label class="hidden">
+      <span>Tour id:</span>
+      <textarea formControlName="tourId" name='tourId' type="NUMBER" placeholder="Tour id..."></textarea>
+    </label>
+    <label class="hidden">
+      <span>Tour title:</span>
+      <textarea formControlName="tourTitle" name='tourTitle' type="text" placeholder="Tour title..."></textarea>
+    </label>
+    <label class="hidden">
+      <span>Tour start:</span>
+      <textarea formControlName="tourStart" name='tourStart' type="text" placeholder="Tour start..."></textarea>
+    </label>
+    <label class="hidden">
+      <span>Tour date:</span>
+      <textarea formControlName="tourDate" name='tourDate' type="date" placeholder="Tour date..."></textarea>
+    </label>
+
+    <button type="submit" disabled="{{emailForm.invalid ? emailForm.invalid: null}}">Send email</button>
+  </form>
+</section>

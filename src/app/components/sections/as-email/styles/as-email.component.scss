@@ -2,46 +2,58 @@
 @import '../../../../../styles/built-in-tags.scss';
 
 :host {
-  width: 100%;
-  min-height: 40vh;
+  height: 60vh;
   display: flex;
-  align-items: center;
-  padding: 2%;
 }
 
 .wrapper {
-  font-size: 13px;
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex: 1;
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  as-email-form {
+    position: absolute;
+    top: 0%;
+  }
 
-    label {
-      display: flex;
-      flex-direction: column;
-      gap: .2rem;
+  as-email-processing {
+    top: -100%;
+    position: absolute;
+  }
 
-      span {
-        font-weight: bold;
-      }
+  as-email-submission-result {
+    top: -100%;
+    position: absolute;
+  }
 
-      input {
-
-      }
-
-      textarea {
-        width: 100%;
-        resize: vertical;
-      }
+  as-email-form,
+  as-email-processing,
+  as-email-submission-result {
+    &.slide-in {
+      animation: slide-in 2s forwards;
     }
 
-    button[type=submit] {
-      width: 50%;
-      align-self: flex-end;
-      padding: 2% 1%;
-      background-color: white;
+    &.slide-out {
+      animation: slide-out 2s forwards;
     }
+
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
   }
 }

@@ -10,7 +10,7 @@
 </div>
 
 <ng-template #email>
-  <as-email [Tour]="Tour"></as-email>
+  <as-email [Tour]="Tour" (OnClose)="onClose()"></as-email>
 </ng-template>
 <ng-template #gallery>
   <as-gallery [Tour]="Tour"></as-gallery>
