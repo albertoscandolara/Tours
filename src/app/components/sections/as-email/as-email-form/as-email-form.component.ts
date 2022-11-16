@@ -123,14 +123,42 @@ export class AsEmailFormComponent implements OnInit {
     const form: HTMLFormElement = (event as SubmitEvent)
       .target as HTMLFormElement;
 
+    const prePromiseMillisecondsTime: number = Date.now();
     emailjs.sendForm(EMAILJS.serviceID, EMAILJS.templateID, form).then(
       () => {
-        this.OnSubmitOk.emit();
+        this._executeAfterMinTime(prePromiseMillisecondsTime, this.OnSubmitOk);
       },
       (error) => {
-        this.OnSubmitError.emit();
+        this._executeAfterMinTime(
+          prePromiseMillisecondsTime,
+          this.OnSubmitError
+        );
       }
     );
+  }
+
+  /**
+   * Prevent emitter to emit before animation has finished,
+   * otherwise there will be a tick
+   *
+   * @param {number} prePromiseMillisecondsTime milliseconds when promise started
+   * @param {EventEmitter} eventEmitter emitter to trigger
+   */
+  private _executeAfterMinTime(
+    prePromiseMillisecondsTime: number,
+    eventEmitter: EventEmitter<void>
+  ): void {
+    const minTimeInMilliseconds: number = 2000;
+    const postPromiseMillisecondsTime: number = Date.now();
+    const difference: number =
+      postPromiseMillisecondsTime - prePromiseMillisecondsTime;
+
+    if (difference < minTimeInMilliseconds) {
+      const remainingTime: number = minTimeInMilliseconds - difference;
+      setTimeout(() => eventEmitter.emit(), remainingTime);
+    } else {
+      eventEmitter.emit();
+    }
   }
 
   /**
