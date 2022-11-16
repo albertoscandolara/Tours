@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Sydney",
-      "date": "2022/11/07",
+      "date": "2022/11/07 12:00:00",
       "description": "A nice tour",
       "start": {
         "country": "Australia",
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "title": "Melbourne",
-      "date": "2022/11/07",
+      "date": "2022/11/07 18:00:00",
       "description": "Another nice tour",
       "start": {
         "country": "Australia",

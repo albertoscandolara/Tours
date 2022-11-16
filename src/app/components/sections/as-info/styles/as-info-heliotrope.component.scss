@@ -2,4 +2,22 @@
 
 .wrapper.heliotrope {
   background-color: $color_plasma_trail_approx;
+
+  .left {
+
+    .header {
+
+      .title {
+
+      }
+    }
+
+    .body {
+
+    }
+  }
+
+  .right {
+    border-left-color: $color_fuchsia_pink_approx;
+  }
 }

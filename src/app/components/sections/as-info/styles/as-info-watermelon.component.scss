@@ -1,5 +1,23 @@
 @import '../../../../../styles/palette.scss';
 
 .wrapper.watermelon {
-  background-color: $color_crimson_approx;
+  background-color: $color_lick_and_kiss_approx;
+
+  .left {
+
+    .header {
+
+      .title {
+
+      }
+    }
+
+    .body {
+
+    }
+  }
+
+  .right {
+    border-left-color: $color_crimson_approx;
+  }
 }

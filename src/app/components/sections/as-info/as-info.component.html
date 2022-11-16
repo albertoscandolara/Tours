@@ -1,3 +1,22 @@
 <section class="wrapper {{Tour.color}}">
-
+  <section class="left">
+    <div class="header">
+      <h2 class="title">
+        {{Tour.title}}
+      </h2>
+    </div>
+    <div class="body">
+      <span>This tour starts at</span>
+      <span>{{Tour.date | date: 'shortTime'}}</span>
+      <span>on</span>
+      <span>{{Tour.date | date: 'fullDate'}}.</span>
+      <span>Meeting at</span>
+      <span>{{Tour.start.street}} {{Tour.start.number}}</span>
+      <span>in</span>
+      <span>{{Tour.start.city}}, {{Tour.start.country}}.</span>
+    </div>
+  </section>
+  <ng-container *ngIf="false">
+    <section class="right"></section>
+  </ng-container>
 </section>
