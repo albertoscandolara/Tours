@@ -12,7 +12,8 @@
   <!-- Success component -->
   <as-email-submission-result [ngClass]="{'slide-in': !submitting && submitOk && !submitError }" [Color]="Tour.color"
     [enableOk]="true" (OnOk)="onClose()">
-    <span>Email has been sent correctly</span>
+    <span>Email has been sent succesfully</span>
+    <span>Thanks for contacting us</span>
   </as-email-submission-result>
 
   <!-- Error component -->
@@ -21,8 +22,8 @@
     [Color]="Tour.color" [enableOk]="true" [enableRetry]="true" (OnOk)="onUndo()" (OnRetry)="onRetry()">
     <span>Ouch, we could not send your email.</span>
     <span>Please, retry or write us at</span>
-    <span><strong>{{email}}</strong>,</span>
-    <span>letting us know about this issue.</span>
+    <span><strong>{{email}}</strong>.</span>
+    <span>Let us know about this issue too.</span>
     <span>We apologize for the inconvenient.</span>
   </as-email-submission-result>
 </section>
