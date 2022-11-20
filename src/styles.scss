@@ -9,7 +9,10 @@ $font_2: sans-serif;
 	font-family: $font_0, $font_1, $font_2;
 }
 
+html,
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
