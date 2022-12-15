@@ -1,11 +1,14 @@
 import { COLORS } from '../enums/colors';
+import { CURRENCIES } from '../enums/currencies';
 
 export interface Tour {
   id: number;
   title: string;
-  date: Date;
+  period: Period;
+  stops: Array<Stop>;
   description: string;
-  start: Start;
+  price: Price;
+  services: Array<string>;
   imagesSignatures: Array<string>;
   mainMenuOpen: boolean;
   visible: boolean;
@@ -17,18 +20,45 @@ export interface Tour {
 export interface TourConfig {
   id: number;
   title: string;
-  date: string;
+  period: PeriodConfig;
+  stops: Array<Stop>;
   description: string;
-  start: Start;
+  price: PriceConfig;
+  services: Array<string>;
   imagesSignatures: Array<string>;
   visible?: boolean;
   previewImageSignature?: string;
   color?: COLORS;
 }
 
-interface Start {
-  country: string;
-  city: string;
-  street: string;
-  number?: number;
+interface PeriodConfig {
+  start: string;
+  end: string;
+}
+
+interface Period {
+  start: Date;
+  end: Date;
+}
+
+interface PriceConfig {
+  currency: string;
+  single: number;
+  couple: number;
+}
+
+interface Price {
+  currency: CURRENCIES;
+  single: number;
+  couple: number;
+}
+
+interface Stop {
+  name: string;
+  coordinates?: Coordinates;
+}
+
+interface Coordinates {
+  x: number;
+  y: number;
 }

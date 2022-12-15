@@ -3,14 +3,68 @@
     {
       "id": 1,
       "title": "Sydney",
-      "date": "2022/11/07 12:00:00",
-      "description": "A nice tour",
-      "start": {
-        "country": "Australia",
-        "city": "Sydney",
-        "street": "Macquarie St",
-        "number": 0
+      "period": {
+        "start": "2023/08/13",
+        "end": "2023/08/20"
       },
+      "stops": [
+        {
+          "name": "Rome"
+        },
+        {
+          "name": "Lake Bracciano"
+        },
+        {
+          "name": "Narni"
+        },
+        {
+          "name": "Spoleto"
+        },
+        {
+          "name": "Assisi"
+        },
+        {
+          "name": "Perugia"
+        },
+        {
+          "name": "Passignano sul Trasimeno"
+        },
+        {
+          "name": "Lake Trasimeno"
+        },
+        {
+          "name": "Cortona"
+        },
+        {
+          "name": "Serre di Rapolano"
+        },
+        {
+          "name": "Siena"
+        },
+        {
+          "name": "San Giminiano"
+        },
+        {
+          "name": "Lucca"
+        }
+      ],
+      "description": "A nice tour",
+      "price": {
+        "currency": "AUD",
+        "single": 4000,
+        "couple": 7000
+      },
+      "services": [
+        "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
+        "Bike rental (any kind: Gravel, MTB, E-bike, Vintage)",
+        "Training advice if needed",
+        "Hotel (single room or double/+ for couples/families) 7 nights",
+        "Guides on the bike",
+        "Mechanical- transport assistance (van)",
+        "Breakfast, lunch and dinner (excl. Drinks)",
+        "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
+        " Entry to Vinaria"
+      ],
       "imagesSignatures": [
         "Sydney.jpg",
         "Fireworks.jpg",
@@ -23,14 +77,68 @@
     {
       "id": 2,
       "title": "Melbourne",
-      "date": "2022/11/07 18:00:00",
-      "description": "Another nice tour",
-      "start": {
-        "country": "Australia",
-        "city": "Melbourne",
-        "street": "St Kilda Rd",
-        "number": 3
+      "period": {
+        "start": "2023/08/13",
+        "end": "2023/08/20"
       },
+      "stops": [
+        {
+          "name": "Rome"
+        },
+        {
+          "name": "Lake Bracciano"
+        },
+        {
+          "name": "Narni"
+        },
+        {
+          "name": "Spoleto"
+        },
+        {
+          "name": "Assisi"
+        },
+        {
+          "name": "Perugia"
+        },
+        {
+          "name": "Passignano sul Trasimeno"
+        },
+        {
+          "name": "Lake Trasimeno"
+        },
+        {
+          "name": "Cortona"
+        },
+        {
+          "name": "Serre di Rapolano"
+        },
+        {
+          "name": "Siena"
+        },
+        {
+          "name": "San Giminiano"
+        },
+        {
+          "name": "Lucca"
+        }
+      ],
+      "description": "Another nice tour",
+      "price": {
+        "currency": "AUD",
+        "single": 4000,
+        "couple": 7000
+      },
+      "services": [
+        "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
+        "Bike rental (any kind: Gravel, MTB, E-bike, Vintage)",
+        "Training advice if needed",
+        "Hotel (single room or double/+ for couples/families) 7 nights",
+        "Guides on the bike",
+        "Mechanical- transport assistance (van)",
+        "Breakfast, lunch and dinner (excl. Drinks)",
+        "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
+        " Entry to Vinaria"
+      ],
       "imagesSignatures": ["Melbourne.jpg", "Skylines.jpg"],
       "visible": true,
       "previewImageSignature": ""
@@ -38,14 +146,68 @@
     {
       "id": 3,
       "title": "Canberra",
-      "date": "2022/11/07",
-      "description": "A third nice tour",
-      "start": {
-        "country": "Australia",
-        "city": "Canberra",
-        "street": "London Cct",
-        "number": 5
+      "period": {
+        "start": "2023/08/13",
+        "end": "2023/08/20"
       },
+      "stops": [
+        {
+          "name": "Rome"
+        },
+        {
+          "name": "Lake Bracciano"
+        },
+        {
+          "name": "Narni"
+        },
+        {
+          "name": "Spoleto"
+        },
+        {
+          "name": "Assisi"
+        },
+        {
+          "name": "Perugia"
+        },
+        {
+          "name": "Passignano sul Trasimeno"
+        },
+        {
+          "name": "Lake Trasimeno"
+        },
+        {
+          "name": "Cortona"
+        },
+        {
+          "name": "Serre di Rapolano"
+        },
+        {
+          "name": "Siena"
+        },
+        {
+          "name": "San Giminiano"
+        },
+        {
+          "name": "Lucca"
+        }
+      ],
+      "description": "A third nice tour",
+      "price": {
+        "currency": "AUD",
+        "single": 4000,
+        "couple": 7000
+      },
+      "services": [
+        "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
+        "Bike rental (any kind: Gravel, MTB, E-bike, Vintage)",
+        "Training advice if needed",
+        "Hotel (single room or double/+ for couples/families) 7 nights",
+        "Guides on the bike",
+        "Mechanical- transport assistance (van)",
+        "Breakfast, lunch and dinner (excl. Drinks)",
+        "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
+        " Entry to Vinaria"
+      ],
       "imagesSignatures": [
         "Canberra.jpg",
         "Parliament.jpg",

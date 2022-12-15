@@ -6,6 +6,7 @@ import { Tour, TourConfig } from 'src/app/models/tour';
 import { COLORS } from 'src/app/enums/colors';
 import { STRING_EMPTY } from 'src/app/constants/constants';
 import { toursImagesFolderPath } from 'src/app/constants/paths';
+import { CURRENCIES } from 'src/app/enums/currencies';
 
 @Component({
   selector: 'as-tours-list',
@@ -47,9 +48,18 @@ export class AsToursListComponent {
     const t: Tour = {
       id: tour.id,
       title: tour.title,
-      date: this._setDate(tour.date),
+      period: {
+        start: this._setDate(tour.period.start),
+        end: this._setDate(tour.period.end),
+      },
+      stops: tour.stops,
       description: tour.description,
-      start: tour.start,
+      price: {
+        currency: tour.price.currency as CURRENCIES,
+        single: tour.price.single,
+        couple: tour.price.couple,
+      },
+      services: tour.services,
       imagesSignatures: this._setImagePaths(tour),
       mainMenuOpen: false,
       visible: tour.visible ?? true,

@@ -99,8 +99,9 @@ export class AsEmailFormComponent implements OnInit {
       ]),
       tourId: new FormControl(-1, [Validators.required]),
       tourTitle: new FormControl(STRING_EMPTY, [Validators.required]),
+      tourStops: new FormControl(STRING_EMPTY, [Validators.required]),
       tourStart: new FormControl(STRING_EMPTY, [Validators.required]),
-      tourDate: new FormControl(STRING_EMPTY, [Validators.required]),
+      tourEnd: new FormControl(STRING_EMPTY, [Validators.required]),
     });
     this._initEmailForm();
   }
@@ -186,9 +187,8 @@ export class AsEmailFormComponent implements OnInit {
 
     this.emailForm.controls['tourId'].setValue(this.Tour.id);
     this.emailForm.controls['tourTitle'].setValue(this.Tour.title);
-    this.emailForm.controls['tourStart'].setValue(
-      `${this.Tour.start.street} ${this.Tour.start.number}, ${this.Tour.start.city}, ${this.Tour.start.country}`
-    );
-    this.emailForm.controls['tourDate'].setValue(this.Tour.date);
+    this.emailForm.controls['stops'].setValue(this.Tour.stops.join(', '));
+    this.emailForm.controls['start'].setValue(`${this.Tour.period.start}`);
+    this.emailForm.controls['end'].setValue(`${this.Tour.period.end}`);
   }
 }
