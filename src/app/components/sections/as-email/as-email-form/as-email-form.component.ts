@@ -99,9 +99,9 @@ export class AsEmailFormComponent implements OnInit {
       ]),
       tourId: new FormControl(-1, [Validators.required]),
       tourTitle: new FormControl(STRING_EMPTY, [Validators.required]),
-      tourStops: new FormControl(STRING_EMPTY, [Validators.required]),
-      tourStart: new FormControl(STRING_EMPTY, [Validators.required]),
-      tourEnd: new FormControl(STRING_EMPTY, [Validators.required]),
+      stops: new FormControl(STRING_EMPTY, [Validators.required]),
+      start: new FormControl(STRING_EMPTY, [Validators.required]),
+      end: new FormControl(STRING_EMPTY, [Validators.required]),
     });
     this._initEmailForm();
   }
