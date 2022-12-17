@@ -28,6 +28,8 @@ import { AsInfoComponent } from './components/sections/as-info/as-info.component
 import { AsEmailFormComponent } from './components/sections/as-email/as-email-form/as-email-form.component';
 import { AsEmailProcessingComponent } from './components/sections/as-email/as-email-processing/as-email-processing.component';
 import { AsEmailSubmissionResultComponent } from './components/sections/as-email/as-email-submission-result/as-email-submission-result.component';
+import { AsInfoDetailsComponent } from './components/sections/as-info/as-info-details/as-info-details.component';
+import { AsInfoMenuComponent } from './components/sections/as-info/as-info-menu/as-info-menu.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { AsEmailSubmissionResultComponent } from './components/sections/as-email
     AsEmailComponent,
     AsGalleryComponent,
     AsInfoComponent,
+    AsInfoDetailsComponent,
+    AsInfoMenuComponent,
     AsEmailFormComponent,
     AsEmailProcessingComponent,
     AsEmailSubmissionResultComponent,

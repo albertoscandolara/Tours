@@ -1,0 +1,13 @@
+@import '../../../../../../styles/palette.scss';
+
+.wrapper.watermelon {
+  background-color: $color_lick_and_kiss_approx;
+
+  .paragraph {
+    border-color: $color_crimson_approx;
+
+    .title {
+      color: $color_crimson_approx;
+    }
+  }
+}

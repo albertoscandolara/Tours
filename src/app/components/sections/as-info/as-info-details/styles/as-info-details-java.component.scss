@@ -1,0 +1,13 @@
+@import '../../../../../../styles/palette.scss';
+
+.wrapper.java {
+  background-color: $color_oasis_stream_approx;
+
+  .paragraph {
+    border-color: $color_caribbean_green_approx;
+
+    .title {
+      color: $color_caribbean_green_approx;
+    }
+  }
+}

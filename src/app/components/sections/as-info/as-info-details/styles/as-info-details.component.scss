@@ -1,0 +1,31 @@
+@import '../../../../../../styles/palette.scss';
+@import '../../../../../../styles/built-in-tags.scss';
+
+:host {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;;
+
+  .paragraph {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 1%;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../../../../styles/palette.scss';
+
+.wrapper.heliotrope {
+  background-color: $color_plasma_trail_approx;
+
+  .paragraph {
+    border-color: $color_fuchsia_pink_approx;
+
+    .title {
+      color: $color_fuchsia_pink_approx;
+    }
+  }
+}

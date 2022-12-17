@@ -6,30 +6,14 @@
       </h2>
     </div>
     <div class="body">
-      <span>From: {{Tour.period.start | date: 'fullDate'}}</span>
-      <span>to: {{Tour.period.end | date: 'fullDate'}}.</span>
-      <span>Price:</span>
-      <span>{{Tour.price.single}} {{Tour.price.currency}} single</span>
-      <span>{{Tour.price.couple}} {{Tour.price.currency}} couple</span>
-      <span>Stops:</span>
-      <ul>
-        <ng-container *ngFor="let stop of Tour.stops">
-          <li>
-            <span>{{stop.name}}</span>
-          </li>
-        </ng-container>
-      </ul>
-      <span>Services:</span>
-      <ul>
-        <ng-container *ngFor="let service of Tour.services">
-          <li>
-            <span>{{service}}</span>
-          </li>
-        </ng-container>
-      </ul>
+      <as-info-details [Tour]="Tour">
+      </as-info-details>
     </div>
   </section>
-  <ng-container *ngIf="false">
-    <section class="right"></section>
+  <ng-container *ngIf="true">
+    <section class="right">
+      <as-info-menu [Tour]="Tour">
+      </as-info-menu>
+    </section>
   </ng-container>
 </section>
