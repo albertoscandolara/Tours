@@ -6,14 +6,18 @@
       </h2>
     </div>
     <div class="body">
-      <as-info-details [Tour]="Tour">
-      </as-info-details>
+      <ng-container *ngIf="section === sections.DETAILS">
+        <as-info-details [Tour]="Tour">
+        </as-info-details>
+      </ng-container>
+      <ng-container *ngIf="section === sections.MAP">
+        <as-info-map [Tour]="Tour">
+        </as-info-map>
+      </ng-container>
     </div>
   </section>
-  <ng-container *ngIf="true">
-    <section class="right">
-      <as-info-menu [Tour]="Tour">
-      </as-info-menu>
-    </section>
-  </ng-container>
+  <section class="right">
+    <as-info-menu [Tour]="Tour" (OnOpenDetails)="onOpenDetails()" (OnOpenMap)="onOpenMap()">
+    </as-info-menu>
+  </section>
 </section>

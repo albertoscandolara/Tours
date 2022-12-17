@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Tour } from 'src/app/models/tour';
 
 @Component({
@@ -18,7 +18,31 @@ export class AsInfoMenuComponent {
   @Input() Tour: Tour;
 
   /**
+   * Details button click event emitter
+   */
+  @Output() OnOpenDetails: EventEmitter<void> = new EventEmitter();
+
+  /**
+   * Map button click event emitter
+   */
+  @Output() OnOpenMap: EventEmitter<void> = new EventEmitter();
+
+  /**
    * Constructor
    */
   constructor() {}
+
+  /**
+   * On details button click handler
+   */
+  public onOpenDetails(): void {
+    this.OnOpenDetails.emit();
+  }
+
+  /**
+   * On map button click handler
+   */
+  public onOpenMap(): void {
+    this.OnOpenMap.emit();
+  }
 }
