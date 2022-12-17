@@ -3,10 +3,16 @@
 
 :host {
   display: flex;
+  height: 100%;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 0 2%;;
+  padding: 0 2%;
+  height: 100%;
+  width: 100%;
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
 }
