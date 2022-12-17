@@ -41,7 +41,7 @@ export class AsInfoMapComponent implements AfterViewInit {
   }
 
   private _initMap(): void {
-    this._map = L.map('map').setView([51.505, -0.09], 13);
+    this._map = L.map('map').setView([42.5, 12.2], 5);
     this._map.options.minZoom = 2;
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
