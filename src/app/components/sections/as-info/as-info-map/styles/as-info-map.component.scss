@@ -1,5 +1,6 @@
-@import '../../../../../../styles/palette.scss';
+
 @import '../../../../../../styles/built-in-tags.scss';
+@import '../../../../../../styles/palette.scss';
 
 :host {
   display: flex;
@@ -14,5 +15,10 @@
   #map {
     height: 100%;
     width: 100%;
+
+    .div-icon-leaflet {
+      background: none;
+      border: none;
+    }
   }
 }

@@ -53,12 +53,12 @@ interface Price {
   couple: number;
 }
 
-interface Stop {
+export interface Stop {
   name: string;
   coordinates?: Coordinates;
 }
 
 interface Coordinates {
-  x: number;
-  y: number;
+  lat: number;
+  lng: number;
 }
