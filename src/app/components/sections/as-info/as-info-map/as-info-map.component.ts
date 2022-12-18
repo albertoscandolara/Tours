@@ -50,6 +50,7 @@ export class AsInfoMapComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this._initMap();
+    this.drawPolyline();
     this._drawPath();
   }
 
@@ -77,6 +78,12 @@ export class AsInfoMapComponent implements AfterViewInit {
     });
   }
 
+  /**
+   * Draw stop marker
+   *
+   * @param {Stop} stop current stop
+   * @returns {void}
+   */
   private _drawMarker(stop: Stop) {
     const point: any = stop.coordinates;
 
@@ -114,5 +121,23 @@ export class AsInfoMapComponent implements AfterViewInit {
     marker.addTo(this._map);
   }
 
-  private drawPolyline(): void {}
+  /**
+   * Draw polyline connecting stops
+   *
+   * @returns {void}
+   */
+  private drawPolyline(): void {
+    const points: any = this.Tour.stops.map((stop) => [
+      stop.coordinates?.lat,
+      stop.coordinates?.lng,
+    ]);
+
+    const color = Object.entries(this._circleMarkerColorDictionary).find(
+      ([key, value]) => key === this.Tour.color
+    )?.[1].stroke;
+
+    const polyline = L.polyline(points, { color: color });
+
+    polyline.addTo(this._map);
+  }
 }
