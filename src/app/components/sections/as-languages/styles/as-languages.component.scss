@@ -12,7 +12,6 @@
 .wrapper {
   height: 100%;
   width: 100%;
-  font-size: 13px;
   padding: 2px;
   display: flex;
   justify-content: center;
@@ -22,7 +21,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2%;
 
     .item {
       display: flex;
@@ -30,10 +28,15 @@
       justify-content: space-between;
       border-bottom-width: 1px;
       border-bottom-style: solid;
-      padding: 2% 4%;
+      padding: 3%;
 
-      img {
-        width: 100%;
+      label {
+        font-size: 15px;
+      }
+
+      input {
+        height: 1.5em;
+        aspect-ratio: 1;
       }
     }
   }
