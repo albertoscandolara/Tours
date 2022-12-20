@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Tour } from 'src/app/models/tour';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-gallery',
@@ -20,5 +21,5 @@ export class AsGalleryComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 }

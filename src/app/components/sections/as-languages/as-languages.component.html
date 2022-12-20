@@ -1,0 +1,18 @@
+<section class="wrapper {{color}}">
+  <ul class="items">
+    <ng-container *ngIf="!languages.length">
+      <li class="item">
+        <span>{{translationsService.translate('No languages available')}}</span>
+      </li>
+    </ng-container>
+    <ng-container *ngIf="languages.length">
+      <ng-container *ngFor="let language of languages">
+        <button class="item" (click)="onChangeLanguage(language)">
+          <label [for]="language.ISOCode">{{language.descriptionISO}}</label>
+          <input [checked]="language.ISOCode === languageService.currentLanguageISOCode" type="radio" name="language"
+            [value]="language.ISOCode">
+        </button>
+      </ng-container>
+    </ng-container>
+  </ul>
+</section>

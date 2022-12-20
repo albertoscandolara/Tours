@@ -9,6 +9,7 @@ import {
 
 import { STRING_EMPTY } from 'src/app/constants/constants';
 import { COLORS } from 'src/app/enums/colors';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-email-processing',
@@ -39,5 +40,5 @@ export class AsEmailProcessingComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 }

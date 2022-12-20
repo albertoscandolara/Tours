@@ -6,15 +6,17 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import { STRING_EMPTY } from 'src/app/constants/constants';
 import { COLORS } from 'src/app/enums/colors';
 import { Action } from 'src/app/models/action';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-header',
   templateUrl: './as-header.component.html',
   styleUrls: [
     './styles/as-header.component.scss',
+    './styles/as-header-dark.component.scss',
+    './styles/as-header-light.component.scss',
     './styles/as-header-heliotrope.component.scss',
     './styles/as-header-java.component.scss',
     './styles/as-header-watermelon.component.scss',
@@ -44,10 +46,10 @@ export class AsHeaderComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
-   * closing event handler
+   * Closing event handler
    */
   public onClose(): void {
     this.OnClose.emit();

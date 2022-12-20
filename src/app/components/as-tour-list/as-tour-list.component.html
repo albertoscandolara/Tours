@@ -6,7 +6,7 @@
       (OnClickEmail)="onClickEmail()">
     </as-menu-item>
     <section class="info">
-      <span class="title">{{Tour.title}}</span>
+      <span class="title">{{ translationsService.translate(Tour.title) }}</span>
       <span class="date">{{Tour.period.start| date: 'mediumDate'}}</span>
       <span class="date">{{Tour.period.end | date: 'mediumDate'}}</span>
     </section>

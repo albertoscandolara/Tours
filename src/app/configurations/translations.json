@@ -1,0 +1,300 @@
+{
+  "translations": [
+    {
+      "key": "No languages available",
+      "value": {
+        "en-US": "No languages available",
+        "it-IT": "Nessuna lingua disponibile",
+        "fr-FR": "Aucune langue disponible"
+      }
+    },
+    {
+      "key": "Close",
+      "value": {
+        "en-US": "Close",
+        "it-IT": "Chiudi",
+        "fr-FR": "Quitter "
+      }
+    },
+    {
+      "key": "Open",
+      "value": {
+        "en-US": "Open",
+        "it-IT": "Apri",
+        "fr-FR": "Ouvrir"
+      }
+    },
+    {
+      "key": "Close menu",
+      "value": {
+        "en-US": "Close menu",
+        "it-IT": "Chiudi il menu",
+        "fr-FR": "Quitter le menu "
+      }
+    },
+    {
+      "key": "Open menu",
+      "value": {
+        "en-US": "Open menu",
+        "it-IT": "Apri il menu",
+        "fr-FR": "Ouvrir le menu"
+      }
+    },
+    {
+      "key": "Show information",
+      "value": {
+        "en-US": "Show information",
+        "it-IT": "Mostra informazioni",
+        "fr-FR": "Montre informations"
+      }
+    },
+    {
+      "key": "Write us",
+      "value": {
+        "en-US": "Write us",
+        "it-IT": "Scrivici",
+        "fr-FR": "Écris-nous"
+      }
+    },
+    {
+      "key": "See gallery",
+      "value": {
+        "en-US": "See gallery",
+        "it-IT": "Visualizza galleria",
+        "fr-FR": "Voir galerie"
+      }
+    },
+    {
+      "key": "Gallery",
+      "value": {
+        "en-US": "Gallery",
+        "it-IT": "Galleria",
+        "fr-FR": "Galerie"
+      }
+    },
+    {
+      "key": "Email",
+      "value": {
+        "en-US": "Email",
+        "it-IT": "Email",
+        "fr-FR": "Email"
+      }
+    },
+    {
+      "key": "Info",
+      "value": {
+        "en-US": "Info",
+        "it-IT": "Informazioni",
+        "fr-FR": "Détails"
+      }
+    },
+    {
+      "key": "Change language",
+      "value": {
+        "en-US": "Change language",
+        "it-IT": "Cambia lingua",
+        "fr-FR": "Changer la langue"
+      }
+    },
+    {
+      "key": "Who we are",
+      "value": {
+        "en-US": "Who we are",
+        "it-IT": "Chi siamo",
+        "fr-FR": "Qui nous sommes"
+      }
+    },
+    {
+      "key": "Object",
+      "value": {
+        "en-US": "Object",
+        "it-IT": "Oggetto della email",
+        "fr-FR": "Objet du message"
+      }
+    },
+    {
+      "key": "Recipient",
+      "value": {
+        "en-US": "Recipient",
+        "it-IT": "Destinatario",
+        "fr-FR": "Destinataire"
+      }
+    },
+    {
+      "key": "Sender",
+      "value": {
+        "en-US": "Sender",
+        "it-IT": "Mittente",
+        "fr-FR": "Expéditeur"
+      }
+    },
+    {
+      "key": "Your email",
+      "value": {
+        "en-US": "Your email here",
+        "it-IT": "La tua email",
+        "fr-FR": "Votre email"
+      }
+    },
+    {
+      "key": "Message",
+      "value": {
+        "en-US": "Message",
+        "it-IT": "Messaggio",
+        "fr-FR": "Message"
+      }
+    },
+    {
+      "key": "Your Message here",
+      "value": {
+        "en-US": "Your Message here",
+        "it-IT": "Scrivi qui il messaggio",
+        "fr-FR": "Ecrivez votre message ici"
+      }
+    },
+    {
+      "key": "Tour id",
+      "value": {
+        "en-US": "Tour id",
+        "it-IT": "Id del tour",
+        "fr-FR": "Titre de la tournée"
+      }
+    },
+    {
+      "key": "Tour title",
+      "value": {
+        "en-US": "Tour title",
+        "it-IT": "Titolo del tour",
+        "fr-FR": "Titre de la tournée"
+      }
+    },
+    {
+      "key": "Stops",
+      "value": {
+        "en-US": "Stops",
+        "it-IT": "Tappe",
+        "fr-FR": "Étapes"
+      }
+    },
+    {
+      "key": "Start date",
+      "value": {
+        "en-US": "Start date",
+        "it-IT": "Data di partenza",
+        "fr-FR": "Dates de début"
+      }
+    },
+    {
+      "key": "End date",
+      "value": {
+        "en-US": "End date",
+        "it-IT": "Data di fine",
+        "fr-FR": "Dates de fin"
+      }
+    },
+    {
+      "key": "Send email",
+      "value": {
+        "en-US": "Send email",
+        "it-IT": "Invia email",
+        "fr-FR": "Envoyer un email"
+      }
+    },
+    {
+      "key": "Sending email",
+      "value": {
+        "en-US": "Sending email",
+        "it-IT": "Invio email in corso",
+        "fr-FR": "Envoi d'email"
+      }
+    },
+    {
+      "key": "Ok",
+      "value": {
+        "en-US": "Ok",
+        "it-IT": "Ok",
+        "fr-FR": "Ok"
+      }
+    },
+    {
+      "key": "Retry",
+      "value": {
+        "en-US": "Retry",
+        "it-IT": "Riprova",
+        "fr-FR": "Réessayer"
+      }
+    },
+    {
+      "key": "Email has been sent succesfully",
+      "value": {
+        "en-US": "Email has been sent succesfully",
+        "it-IT": "L'email è stata inviata con successo",
+        "fr-FR": "L'e-mail a été envoyé avec succès"
+      }
+    },
+    {
+      "key": "Thanks for contacting us",
+      "value": {
+        "en-US": "Thanks for contacting us",
+        "it-IT": "Grazie per averci contattato",
+        "fr-FR": "Merci de nous avoir contacté"
+      }
+    },
+    {
+      "key": "Ouch, we could not send your email",
+      "value": {
+        "en-US": "Ouch, we could not send your email",
+        "it-IT": "Ahi, non siamo riusciti a inviare la tua email",
+        "fr-FR": "Ouch, nous n'avons pas pu envoyer votre email"
+      }
+    },
+    {
+      "key": "Please, retry or write us at",
+      "value": {
+        "en-US": "Please, retry or write us at",
+        "it-IT": "Per favore, riprova o scrivici a",
+        "fr-FR": "Veuillez réessayer ou écrivez-nous à"
+      }
+    },
+    {
+      "key": "Let us know about this issue too",
+      "value": {
+        "en-US": "Let us know about this issue too",
+        "it-IT": "Segnalaci anche questo problema",
+        "fr-FR": "Faites-nous également part de ce problème"
+      }
+    },
+    {
+      "key": "We apologize for the inconvenient",
+      "value": {
+        "en-US": "We apologize for the inconvenient",
+        "it-IT": "Ci scusiamo per l'inconveniente",
+        "fr-FR": "Nous nous excusons pour la gêne occasionnée"
+      }
+    },
+    {
+      "key": "No images available",
+      "value": {
+        "en-US": "No images available",
+        "it-IT": "Nessuna immagine disponibile",
+        "fr-FR": "Aucune image disponible"
+      }
+    },
+    {
+      "key": "See details",
+      "value": {
+        "en-US": "See details",
+        "it-IT": "Visualizza dettagli",
+        "fr-FR": "Afficher les détails"
+      }
+    },
+    {
+      "key": "See stops on the map",
+      "value": {
+        "en-US": "See stops on the map",
+        "it-IT": "Visualizza tappe sulla mappa",
+        "fr-FR": "Voir les étapes sur la carte"
+      }
+    }
+  ]
+}

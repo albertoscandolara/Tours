@@ -1,0 +1,9 @@
+@import '../../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.dark {
+  background-color: $color_b;
+  color: $light;
+}

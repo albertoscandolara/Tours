@@ -1,22 +1,26 @@
 <section class="wrapper {{Color}}">
-  <div class="left-side">
-    <div class="rolling-svg-container">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 128 128" xml:space="preserve" width="100%" height="100%">
-        <g class="circle">
-          <circle cx="50%" cy="50%" r="50%" fill="#ffffff"></circle>
-          <ng-container [ngSwitch]="Action.id">
-            <ng-container *ngSwitchCase="0" [ngTemplateOutlet]="email"></ng-container>
-            <ng-container *ngSwitchCase="1" [ngTemplateOutlet]="gallery"></ng-container>
-            <ng-container *ngSwitchCase="2" [ngTemplateOutlet]="info"></ng-container>
-          </ng-container>
-        </g>
-      </svg>
+  <ng-container *ngIf="Action">
+    <div class="left-side">
+      <div class="rolling-svg-container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 128 128" xml:space="preserve" width="100%" height="100%">
+          <g class="circle">
+            <circle cx="50%" cy="50%" r="50%" fill="#ffffff"></circle>
+            <ng-container [ngSwitch]="Action.id">
+              <ng-container *ngSwitchCase="0" [ngTemplateOutlet]="email"></ng-container>
+              <ng-container *ngSwitchCase="1" [ngTemplateOutlet]="gallery"></ng-container>
+              <ng-container *ngSwitchCase="2" [ngTemplateOutlet]="info"></ng-container>
+              <ng-container *ngSwitchCase="3" [ngTemplateOutlet]="languages"></ng-container>
+              <ng-container *ngSwitchCase="4" [ngTemplateOutlet]="people"></ng-container>
+            </ng-container>
+          </g>
+        </svg>
+      </div>
+      <h3 class="title">{{ translationsService.translate(Action.text) | titlecase}}</h3>
     </div>
-    <h3 class="title">{{Action.text | titlecase}}</h3>
-  </div>
+  </ng-container>
   <div class="right-side">
-    <button title="Close">
+    <button [title]="translationsService.translate('Close')">
       <svg as-cross-svg [Color]="Colors.LIGHT" (click)="onClose()" x="15%" y="15%" width="70%" height="70%"
         stroke-width="2"></svg>
     </button>
@@ -32,4 +36,10 @@
 </ng-template>
 <ng-template #info>
   <svg as-info-svg [Color]="Color" x="15%" y="15%" width="70%" height="70%" stroke-width="0"></svg>
+</ng-template>
+<ng-template #languages>
+  <svg as-language-svg [Color]="Color" x="15%" y="15%" width="70%" height="70%" stroke-width="0"></svg>
+</ng-template>
+<ng-template #people>
+  <svg as-people-svg [Color]="Color" x="15%" y="15%" width="70%" height="70%" stroke-width="0"></svg>
 </ng-template>

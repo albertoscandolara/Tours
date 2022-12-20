@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Tour } from './models/tour';
+import { LanguageService } from './services/language-service/language.service';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ export class AppComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(private _languageService: LanguageService) {}
 }

@@ -5,11 +5,13 @@ button {
   cursor: pointer !important;
   margin: 0;
   padding: 0;
+
   &.not-active,
   &:disabled {
       opacity: 0.2;
   }
 }
+
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
   font-size: inherit;
@@ -17,10 +19,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 li {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;

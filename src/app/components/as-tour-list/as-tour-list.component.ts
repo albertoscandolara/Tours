@@ -4,6 +4,7 @@ import { STRING_EMPTY } from 'src/app/constants/constants';
 import { toursImagesFolderPath } from 'src/app/constants/paths';
 import { COLORS } from 'src/app/enums/colors';
 import { Tour } from 'src/app/models/tour';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-tour-list',
@@ -39,7 +40,7 @@ export class AsTourListComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
    * Menu toggler handler

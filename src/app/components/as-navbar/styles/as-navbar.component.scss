@@ -11,11 +11,17 @@
   box-shadow: 2px 2px 9px 3px rgb(0 0 0 / 86%);
   color: white;
 
-  .hamburger-menu {
-    display: none;
+  .menu {
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 3%;
   }
 
   .title {
     font-size: 5vw;
+    flex: 1;
   }
 }

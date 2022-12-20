@@ -1,44 +1,54 @@
 <section class="wrapper {{Tour.color}}">
   <form #form="ngForm" [formGroup]="emailForm" class="emailForm" (ngSubmit)="onFormSubmit()">
     <label>
-      <span>Subject</span>
-      <input formControlName="subject" name='subject' type="text" placeholder="Email subject..." />
+      <span>{{ translationsService.translate('Object') }}</span>
+      <input formControlName="object" name='object' type="text"
+        placeholder="{{ translationsService.translate('Object') }}" />
     </label>
     <label>
-      <span>To</span>
-      <input formControlName="to" name='to' type="email" placeholder="Email recipient..." readonly />
+      <span>{{ translationsService.translate('Recipient') }}</span>
+      <input formControlName="recipient" name='recipient' type="email"
+        placeholder="{{ translationsService.translate('Recipient') }}" readonly />
     </label>
     <label>
-      <span>From</span>
-      <input formControlName="from" name='from' type="email" placeholder="Your email..." />
+      <span>{{ translationsService.translate('Sender') }}</span>
+      <input formControlName="sender" name='sender' type="email"
+        placeholder="{{ translationsService.translate('Your email') }}" />
     </label>
     <label>
-      <span>Message</span>
-      <textarea formControlName="message" name='message' type="text" placeholder="Your Message..."></textarea>
+      <span>{{ translationsService.translate('Message') }}</span>
+      <textarea formControlName="message" name='message' type="text"
+        placeholder="{{ translationsService.translate('Your Message here') }}"></textarea>
     </label>
     <label class="hidden">
-      <span>Tour id</span>
-      <input formControlName="tourId" name='tourId' type="NUMBER" placeholder="Tour id..." />
+      <span>{{ translationsService.translate('Tour id') }}</span>
+      <input formControlName="tourId" name='tourId' type="NUMBER"
+        placeholder="{{ translationsService.translate('Tour id') }}" />
     </label>
     <label class="hidden">
-      <span>Tour title</span>
-      <input formControlName="tourTitle" name='tourTitle' type="text" placeholder="Tour title..." />
+      <span>{{ translationsService.translate('Tour title') }}</span>
+      <input formControlName="tourTitle" name='tourTitle' type="text"
+        placeholder="{{ translationsService.translate('Tour title') }}" />
     </label>
     <label class="hidden">
-      <span>Stops</span>
-      <input formControlName="stops" name='stops' type="text" placeholder="Stops..." />
+      <span>{{ translationsService.translate('Stops') }}</span>
+      <input formControlName="stops" name='stops' type="text"
+        placeholder="{{ translationsService.translate('Stops') }}" />
     </label>
     <label class="hidden">
-      <span>Tour start:</span>
-      <input formControlName="start" name='start' type="date" placeholder="Tour start..." />
+      <span>{{ translationsService.translate('Start date') }}</span>
+      <input formControlName="start" name='start' type="date"
+        placeholder="{{ translationsService.translate('Start date') }}" />
     </label>
     <label class="hidden">
-      <span>Tour end:</span>
-      <input formControlName="end" name='end' type="date" placeholder="Tour end..." />
+      <span>{{ translationsService.translate('End date') }}</span>
+      <input formControlName="end" name='end' type="date"
+        placeholder="{{ translationsService.translate('End date') }}" />
     </label>
 
     <div class="buttons-container">
-      <button type="submit" disabled="{{emailForm.invalid ? emailForm.invalid: null}}">Send email</button>
+      <button type="submit" disabled="{{emailForm.invalid ? emailForm.invalid: null}}">{{
+        translationsService.translate('Send email') }}</button>
     </div>
   </form>
 </section>

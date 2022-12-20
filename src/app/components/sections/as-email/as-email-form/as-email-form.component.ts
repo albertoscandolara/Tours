@@ -15,6 +15,7 @@ import emailjs from 'emailjs-com';
 
 import { COLORS } from 'src/app/enums/colors';
 import { Tour } from 'src/app/models/tour';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-email-form',
@@ -77,19 +78,19 @@ export class AsEmailFormComponent implements OnInit {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
    * OnInit lifecycle hook
    */
   ngOnInit(): void {
     this.emailForm = new FormGroup({
-      subject: new FormControl(STRING_EMPTY, [Validators.required]),
-      to: new FormControl(STRING_EMPTY, [
+      object: new FormControl(STRING_EMPTY, [Validators.required]),
+      recipient: new FormControl(STRING_EMPTY, [
         Validators.required,
         Validators.email,
       ]),
-      from: new FormControl(STRING_EMPTY, [
+      sender: new FormControl(STRING_EMPTY, [
         Validators.required,
         Validators.email,
       ]),
@@ -178,11 +179,11 @@ export class AsEmailFormComponent implements OnInit {
    * @returns {void}
    */
   private _initEmailForm(): void {
-    this.emailForm.controls['subject'].setValue(
+    this.emailForm.controls['object'].setValue(
       `Tour '${this.Tour.title}' request information`
     );
-    this.emailForm.controls['to'].setValue(`${this.email}`);
-    this.emailForm.controls['from'].setValue(STRING_EMPTY);
+    this.emailForm.controls['recipient'].setValue(`${this.email}`);
+    this.emailForm.controls['sender'].setValue(STRING_EMPTY);
     this.emailForm.controls['message'].setValue(STRING_EMPTY);
 
     this.emailForm.controls['tourId'].setValue(this.Tour.id);

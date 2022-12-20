@@ -11,6 +11,7 @@ import { Tour } from 'src/app/models/tour';
 
 import { COLORS } from 'src/app/enums/colors';
 import { AsEmailFormComponent } from './as-email-form/as-email-form.component';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-email',
@@ -74,7 +75,7 @@ export class AsEmailComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
    * Email has been sent correctly.

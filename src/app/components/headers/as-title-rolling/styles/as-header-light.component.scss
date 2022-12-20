@@ -1,0 +1,9 @@
+@import '../../../../../styles/palette.scss';
+
+:host {
+}
+
+.wrapper.light {
+  background-color: $color_f;
+  color: $light;
+}

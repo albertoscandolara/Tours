@@ -1,0 +1,16 @@
+@import '../../../../../styles/palette.scss';
+
+.wrapper.light {
+  background-color: $color_g;
+  color: $black;
+
+  .items {
+
+    .item {
+      border-bottom-color: $color_h;
+
+      img {
+      }
+    }
+  }
+}

@@ -1,10 +1,12 @@
-<div class="modal-wrapper {{Tour.color}}">
-  <as-header [Action]="action" [Color]="Tour.color" (OnClose)="onClose()"></as-header>
+<div class="modal-wrapper {{color}}">
+  <as-header [Action]="action" [Color]="color" (OnClose)="onClose()"></as-header>
   <section class="body">
     <ng-container [ngSwitch]="action.id">
       <ng-container *ngSwitchCase="0" [ngTemplateOutlet]="email"></ng-container>
       <ng-container *ngSwitchCase="1" [ngTemplateOutlet]="gallery"></ng-container>
       <ng-container *ngSwitchCase="2" [ngTemplateOutlet]="info"></ng-container>
+      <ng-container *ngSwitchCase="3" [ngTemplateOutlet]="language"></ng-container>
+      <ng-container *ngSwitchCase="4" [ngTemplateOutlet]="people"></ng-container>
     </ng-container>
   </section>
 </div>
@@ -17,4 +19,10 @@
 </ng-template>
 <ng-template #info>
   <as-info [Tour]="Tour"></as-info>
+</ng-template>
+<ng-template #language>
+  <as-languages [color]="colors.DARK"></as-languages>
+</ng-template>
+<ng-template #people>
+  <!-- <as-people [people]="people"></as-people> -->
 </ng-template>

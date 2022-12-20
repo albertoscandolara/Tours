@@ -1,5 +1,6 @@
 <section class="wrapper {{Color}}" #item [ngClass]="{'open': isOpen}">
-  <button class="moon-quarter" [title]="isOpen ? 'Close menu' : 'Open menu'"
+  <button class="moon-quarter"
+    [title]="isOpen ? translationsService.translate('Close menu') : translationsService.translate('Open menu')"
     (click)="scroll(item); onMoonQuarterClick()">
     <div class="moon-quarter-relative">
       <div class="waves-container">
@@ -26,7 +27,7 @@
 
       <g class="circles-group" transform="translate(-20 0)">
         <g class="circle" (click)="onClickInfo()">
-          <title>Show information</title>
+          <title>{{ translationsService.translate('Show information') }}</title>
           <circle r="22" fill="#ffffff"></circle>
           <svg as-info-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="0"></svg>
 
@@ -40,7 +41,7 @@
         </g>
 
         <g class="circle" (click)="onClickEmail()">
-          <title>Write us</title>
+          <title>{{ translationsService.translate('Write us') }}!</title>
           <circle r="22" fill="#ffffff"></circle>
           <svg as-email-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="2"></svg>
 
@@ -52,7 +53,7 @@
         </g>
 
         <g class="circle" (click)="onClickGallery()">
-          <title>See gallery</title>
+          <title>{{ translationsService.translate('See gallery') }}</title>
           <circle r="22" fill="#ffffff"></circle>
           <svg as-camera-svg [Color]="Color" x="-11" y="-11" width="22" height="22" stroke-width="5"></svg>
 

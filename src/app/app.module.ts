@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -11,7 +12,10 @@ import { AsCrossSvgComponent } from './components/svg/as-cross-svg/as-cross.svg.
 import { AsEmailSvgComponent } from './components/svg/as-email-svg/as-email.svg.component';
 import { AsCameraSvgComponent } from './components/svg/as-camera-svg/as-camera.svg.component';
 import { AsInfoSvgComponent } from './components/svg/as-info-svg/as-info.svg.component';
+import { AsLanguageSvgComponent } from './components/svg/as-language-svg/as-language-svg.component';
 import { AsMapSvgComponent } from './components/svg/as-map-svg/as-map.svg.component';
+import { AsMenuSvgComponent } from './components/svg/as-menu-svg/as-menu.svg.component';
+import { AsPeopleSvgComponent } from './components/svg/as-people-svg/as-people.svg.component';
 import { AsSpinnerSvgComponent } from './components/svg/as-spinner-svg/as-spinner.svg.component';
 
 // other components
@@ -33,6 +37,11 @@ import { AsInfoDetailsComponent } from './components/sections/as-info/as-info-de
 import { AsInfoMenuComponent } from './components/sections/as-info/as-info-menu/as-info-menu.component';
 import { AsDetailsSvgComponent } from './components/svg/as-details-svg/as-details.svg.component';
 import { AsInfoMapComponent } from './components/sections/as-info/as-info-map/as-info-map.component';
+import { AsMenuComponent } from './components/as-menu/as-menu.component';
+import { AsSideModalComponent } from './components/modals/as-side-modal/as-side-modal.component';
+import { LanguageService } from './services/language-service/language.service';
+import { TranslationsService } from './services/translations-service/translations.service';
+import { AsLanguagesComponent } from './components/sections/as-languages/as-languages.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +51,19 @@ import { AsInfoMapComponent } from './components/sections/as-info/as-info-map/as
     AsDetailsSvgComponent,
     AsEmailSvgComponent,
     AsInfoSvgComponent,
+    AsLanguageSvgComponent,
     AsMapSvgComponent,
+    AsMenuSvgComponent,
+    AsPeopleSvgComponent,
     AsSpinnerSvgComponent,
     AsMenuItemComponent,
     AsTourListComponent,
     AsToursListComponent,
     AsNavbarComponent,
     AsMainComponent,
+    AsMenuComponent,
     AsModalComponent,
+    AsSideModalComponent,
     AsActionComponent,
     AsHeaderComponent,
     AsEmailComponent,
@@ -61,15 +75,17 @@ import { AsInfoMapComponent } from './components/sections/as-info/as-info-map/as
     AsEmailFormComponent,
     AsEmailProcessingComponent,
     AsEmailSubmissionResultComponent,
+    AsLanguagesComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [LanguageService, TranslationsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

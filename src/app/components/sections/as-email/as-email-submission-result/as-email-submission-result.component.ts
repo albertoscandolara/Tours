@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { COLORS } from 'src/app/enums/colors';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 /**
  * After email submission, this component shows feedback to the user
@@ -48,7 +49,7 @@ export class AsEmailSubmissionResultComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
    * Ok button press event handler

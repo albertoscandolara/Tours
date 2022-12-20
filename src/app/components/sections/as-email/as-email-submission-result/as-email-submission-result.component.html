@@ -4,10 +4,10 @@
   </div>
   <div class="buttons-container">
     <ng-container *ngIf="enableOk">
-      <button (click)="onOk()">Ok</button>
+      <button (click)="onOk()">{{ translationsService.translate('Ok') }}</button>
     </ng-container>
     <ng-container *ngIf="enableRetry">
-      <button (click)="onRetry()">Retry</button>
+      <button (click)="onRetry()">{{ translationsService.translate('Retry') }}</button>
     </ng-container>
   </div>
 </section>

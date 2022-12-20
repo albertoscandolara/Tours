@@ -1,0 +1,104 @@
+@import '../../../../styles/palette.scss';
+
+:host {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  height: 96%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  position: relative;
+
+  &.right {
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+
+  &.left {
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+  }
+
+  &.top {
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+
+  &.left {
+    border-top-right-radius: 3%;
+    border-top-right-radius: 3%;
+  }
+
+  button {
+    height: 70%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    white-space: nowrap;
+
+    svg {
+      height: 100%;
+      aspect-ratio: 1;
+      width: auto;
+    }
+  }
+
+  .header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2% 4%;
+    background-color: $color_a;
+
+    button {
+      padding: 3%;
+
+      svg {
+        height: 100%;
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5%;
+    background-color: $color_c;
+
+    .action-container {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      padding: 2% 0;
+      border-bottom: 1px solid $light;
+
+
+      button {
+        width: 100%;
+
+        svg {
+        }
+
+        span {
+          flex: 1;
+          display: flex;
+          justify-content: left;
+          color: $white;
+        }
+      }
+    }
+  }
+}

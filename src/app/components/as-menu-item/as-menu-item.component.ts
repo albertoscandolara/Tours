@@ -1,7 +1,8 @@
-import { EventEmitter, SimpleChanges } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 import { Component, ElementRef, Input, Output, ViewChild } from '@angular/core';
 import { COLORS } from 'src/app/enums/colors';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 /**
  * Tour item menu, comprehending moon-quarter button to toggle it, as well as tour navigation buttons
@@ -69,7 +70,7 @@ export class AsMenuItemComponent {
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
 
   /**
    * Handle moon-quarter click event

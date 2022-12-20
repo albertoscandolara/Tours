@@ -1,0 +1,23 @@
+<section class="wrapper" [@slideInOut]>
+  <as-header [Color]="colors.DARK" (OnClose)="onClose()"></as-header>
+  <section class="body">
+    <div class="action-container">
+      <button (click)="onChangeLanguageOpen()">
+        <svg as-language-svg [Color]="colors.LIGHT" stroke-width="2"></svg>
+        <span>{{translationsService.translate('Change language')}}</span>
+      </button>
+    </div>
+    <div class="action-container">
+      <button (click)="onPeopleOpen()">
+        <svg as-people-svg [Color]="colors.LIGHT" stroke-width="2"></svg>
+        <span>{{translationsService.translate('Who we are')}}</span>
+      </button>
+    </div>
+  </section>
+</section>
+
+<ng-container *ngIf="isModalOpen">
+  <as-modal (OnClose)="onModalClose()">
+    <as-action [action]="currentAction" [color]="colors.DARK" (OnClose)="onModalClose()"></as-action>
+  </as-modal>
+</ng-container>
