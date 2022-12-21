@@ -2,7 +2,7 @@
   "tours": [
     {
       "id": 1,
-      "title": "Sydney",
+      "title": "Vinaria",
       "period": {
         "start": "2023/08/13",
         "end": "2023/08/20"
@@ -139,7 +139,7 @@
           }
         }
       ],
-      "description": "A nice tour",
+      "description": "",
       "price": {
         "currency": "AUD",
         "single": 4000,
@@ -154,23 +154,18 @@
         "Mechanical- transport assistance (van)",
         "Breakfast, lunch and dinner (excl. Drinks)",
         "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
-        " Entry to Vinaria"
+        "Entry to Vinaria"
       ],
-      "imagesSignatures": [
-        "Sydney.jpg",
-        "Fireworks.jpg",
-        "Opera house.jpg",
-        "Skylines.jpg"
-      ],
+      "imagesSignatures": ["Race.jpg", "Rider.jpg", "Riders.jpg"],
       "visible": true,
-      "previewImageSignature": "Sydney.jpg"
+      "previewImageSignature": "Race.jpg"
     },
     {
       "id": 2,
-      "title": "Melbourne",
+      "title": "L’Eroica",
       "period": {
-        "start": "2023/08/13",
-        "end": "2023/08/20"
+        "start": "2023/09/24",
+        "end": "2023/10/01"
       },
       "stops": [
         {
@@ -294,17 +289,17 @@
           }
         },
         {
-          "name": "Lucca",
+          "name": "Gaiole in Chianti",
           "map": {
             "checkpoint": true,
             "coordinates": {
-              "lat": 43.83849,
-              "lng": 10.507736
+              "lat": 43.46697,
+              "lng": 11.43386
             }
           }
         }
       ],
-      "description": "Another nice tour",
+      "description": "",
       "price": {
         "currency": "AUD",
         "single": 4000,
@@ -319,175 +314,17 @@
         "Mechanical- transport assistance (van)",
         "Breakfast, lunch and dinner (excl. Drinks)",
         "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
-        " Entry to Vinaria"
-      ],
-      "imagesSignatures": ["Melbourne.jpg", "Skylines.jpg"],
-      "visible": true,
-      "previewImageSignature": ""
-    },
-    {
-      "id": 3,
-      "title": "Canberra",
-      "period": {
-        "start": "2023/08/13",
-        "end": "2023/08/20"
-      },
-      "stops": [
-        {
-          "name": "Rome",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 41.902782,
-              "lng": 12.496366
-            }
-          }
-        },
-        {
-          "name": "Lake Bracciano",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 42.121689,
-              "lng": 12.232093
-            }
-          }
-        },
-        {
-          "name": "Narni",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 42.51956,
-              "lng": 12.52758
-            }
-          }
-        },
-        {
-          "name": "Spoleto",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 42.7564791,
-              "lng": 12.68547
-            }
-          }
-        },
-        {
-          "name": "Assisi",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.06671,
-              "lng": 12.62109
-            }
-          }
-        },
-        {
-          "name": "Perugia",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.112221,
-              "lng": 12.388889
-            }
-          }
-        },
-        {
-          "name": "Passignano sul Trasimeno",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.195168,
-              "lng": 12.130333
-            }
-          }
-        },
-        {
-          "name": "Lake Trasimeno",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.1333328,
-              "lng": 12.0999996
-            }
-          }
-        },
-        {
-          "name": "Cortona",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.270753,
-              "lng": 11.985453
-            }
-          }
-        },
-        {
-          "name": "Serre di Rapolano",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.257778,
-              "lng": 11.616944
-            }
-          }
-        },
-        {
-          "name": "Siena",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.318611,
-              "lng": 11.330556
-            }
-          }
-        },
-        {
-          "name": "San Gimignano",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.4738,
-              "lng": 11.02975
-            }
-          }
-        },
-        {
-          "name": "Lucca",
-          "map": {
-            "checkpoint": true,
-            "coordinates": {
-              "lat": 43.83849,
-              "lng": 10.507736
-            }
-          }
-        }
-      ],
-      "description": "A third nice tour",
-      "price": {
-        "currency": "AUD",
-        "single": 4000,
-        "couple": 7000
-      },
-      "services": [
-        "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
-        "Bike rental (any kind: Gravel, MTB, E-bike, Vintage)",
-        "Training advice if needed",
-        "Hotel (single room or double/+ for couples/families) 7 nights",
-        "Guides on the bike",
-        "Mechanical- transport assistance (van)",
-        "Breakfast, lunch and dinner (excl. Drinks)",
-        "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
-        " Entry to Vinaria"
+        "Entry to L'Eroica"
       ],
       "imagesSignatures": [
-        "Canberra.jpg",
-        "Parliament.jpg",
-        "National arboretum.jpg"
+        "Hill.jpg",
+        "Moment.jpg",
+        "Race.jpg",
+        "Road.jpg",
+        "Vineyards.jpg"
       ],
       "visible": true,
-      "previewImageSignature": "Canberra.jpg"
+      "previewImageSignature": "Road.jpg"
     }
   ]
 }

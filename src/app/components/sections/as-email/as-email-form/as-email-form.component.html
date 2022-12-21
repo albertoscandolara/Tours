@@ -1,4 +1,10 @@
 <section class="wrapper {{Tour.color}}">
+  <section class="privacy-disclaimer">
+    <span>{{ translationsService.translate('Every personal information, as your email, will be exclusively used to
+      contact you back directly and to
+      address your needs in the best way possible') }}.</span>
+    <span>{{ translationsService. translate('We do not store any kind of data') }}.</span>
+  </section>
   <form #form="ngForm" [formGroup]="emailForm" class="emailForm" (ngSubmit)="onFormSubmit()">
     <label>
       <span>{{ translationsService.translate('Object') }}</span>

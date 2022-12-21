@@ -1,53 +1,58 @@
 @import '../../../../../styles/built-in-tags.scss';
 
 :host {
+  max-height: 100px;
+  height: 10%;
   width: 100%;
 }
 
 .wrapper {
   min-height: 45px;
-  max-height: 350px;
-  height: 8vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 0 1%;
 
-  .left-side {
-    height: 100%;
+  .left-side,
+  .right-side {
+    height: 70%;
     display: flex;
-    align-items: center;
-    flex: 1;
 
-    .rolling-svg-container {
-      height: 100%;
+    &.left-side {
+      align-items: center;
+      flex: 1;
+      padding-left: 1%;
 
-      &> svg {
-        display: block;
-        margin: auto;
-        transform-origin: 50% 50%;
+      .rolling-svg-container {
+        height: 100%;
+
+        &> svg {
+          display: block;
+          margin: auto;
+          transform-origin: 50% 50%;
+        }
+      }
+
+      .title {
+        padding: 0 10px;
+        font-size: 20px;
       }
     }
 
-    .title {
-      padding: 0 10px
-    }
-  }
+    &.right-side {
+      align-items: flex-end;
 
-  .right-side {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
+      button {
+        height: 100%;
+        aspect-ratio: 1/1;
 
-    button {
-      height: 100%;
-      aspect-ratio: 1/1;
-      padding: 15%;
-
-      &> svg {
-        display: block;
-        margin: auto;
-        transform-origin: 50% 50%;
+        &> svg {
+          height: 40%;
+          display: block;
+          margin: auto;
+          transform-origin: 50% 50%;
+        }
       }
     }
   }

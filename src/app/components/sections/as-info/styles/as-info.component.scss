@@ -44,12 +44,14 @@
   }
 
   .right {
+    display: flex;
+    align-items: start;
+    justify-content: center;
     height: 100%;
     border-left-width: 1px;
     border-left-style: solid;
     min-width: 70px;
     width: 10%;
     max-width: 350px;
-    padding: 0 7px;
   }
 }

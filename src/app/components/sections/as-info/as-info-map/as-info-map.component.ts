@@ -68,6 +68,11 @@ export class AsInfoMapComponent implements AfterViewInit {
     }).addTo(this._map);
   }
 
+  /**
+   * Draw marker on stops which are signed as checkpoints
+   *
+   * @returns {void}
+   */
   private _drawMarkerPath(): void {
     const stops: Array<Stop> = this.Tour.stops.filter(
       (stop) => stop.map.checkpoint && stop.map.coordinates
@@ -96,8 +101,8 @@ export class AsInfoMapComponent implements AfterViewInit {
         html: SVG.END,
         className: 'div-icon-leaflet',
         iconSize: [30, 30],
-        iconAnchor: [0, 0],
-        popupAnchor: [-3, -76],
+        iconAnchor: [15, 15],
+        popupAnchor: [0, 0],
       });
 
       marker = new L.Marker([point.lat, point.lng], { icon: icon });
@@ -122,7 +127,7 @@ export class AsInfoMapComponent implements AfterViewInit {
   }
 
   /**
-   * Draw polyline connecting stops
+   * Draw polyline connecting stops with coordinates
    *
    * @returns {void}
    */
@@ -138,5 +143,7 @@ export class AsInfoMapComponent implements AfterViewInit {
     const polyline = L.polyline(points, { color: color });
 
     polyline.addTo(this._map);
+
+    this._map.fitBounds(polyline.getBounds());
   }
 }

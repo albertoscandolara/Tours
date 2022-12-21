@@ -2,4 +2,10 @@
 
 .wrapper.watermelon {
   background-color: $color_lick_and_kiss_approx;
+
+  .privacy-disclaimer {
+    color: $white;
+    border-color: $color_wild_watermelon_approx;
+    background-color: $color_cerise_red_approx;
+  }
 }

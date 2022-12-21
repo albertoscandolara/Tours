@@ -1,12 +1,14 @@
 :host {
-  max-width: 2500px;
+  max-width: 1000px;
   width: 100%;
   display: block;
   position: relative;
 }
 
 .item {
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: end;
   aspect-ratio: 3/2;
   background-size: cover;
 
@@ -19,16 +21,15 @@
   }
 
   .info {
-    position: absolute;
-    bottom: 5%;
-    transform: translate(5%, 5%);
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 5vw;
+    font-size: 20px;
+    padding: 2%;
+    position: absolute;
 
     .title {
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     .date {

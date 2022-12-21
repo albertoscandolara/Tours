@@ -105,6 +105,22 @@
       }
     },
     {
+      "key": "Every personal information, as your email, will be exclusively used to contact you back directly and to address your needs in the best way possible",
+      "value": {
+        "en-US": "Every personal information, as your email, will be exclusively used to contact you back directly and to address your needs in the best way possible",
+        "it-IT": "Tutte le informazioni personali, come l'indirizzo email, verranno utilizzate esclusivamente per ricontattarti e per venire incontro ai tuoi bisogni nel miglior modo possibile",
+        "fr-FR": "Toutes les informations personnelles, telles que votre adresse e-mail, seront utilisées exclusivement pour vous contacter et répondre au mieux à vos besoins."
+      }
+    },
+    {
+      "key": "We do not store any kind of data",
+      "value": {
+        "en-US": "We do not store any kind of data",
+        "it-IT": "Noi non immagazziniamo alcun tipo di dato",
+        "fr-FR": "Nous ne stockons aucune donnée"
+      }
+    },
+    {
       "key": "Object",
       "value": {
         "en-US": "Object",
@@ -446,6 +462,14 @@
         "en-US": "Lucca",
         "it-IT": "Lucca",
         "fr-FR": "Lucques"
+      }
+    },
+    {
+      "key": "Gaiole in Chianti",
+      "value": {
+        "en-US": "Gaiole in Chianti",
+        "it-IT": "Gaiole in Chianti",
+        "fr-FR": "Gaiole in Chianti"
       }
     }
   ]

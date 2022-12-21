@@ -1,9 +1,15 @@
 @import '../../../../styles/palette.scss';
+@import '../../../../styles.scss';
+
+:host {
+  max-height: 350px;
+  height: 10%;
+  width: 100%;
+}
 
 .navbar {
-  min-height: 45px;
-  max-height: 350px;
-  height: 8vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,11 +23,18 @@
     display: flex;
     align-items: center;
     background-color: transparent;
-    padding: 3%;
+
+    svg {
+      height: 40%;
+    }
   }
 
   .title {
-    font-size: 5vw;
     flex: 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5em;
   }
 }

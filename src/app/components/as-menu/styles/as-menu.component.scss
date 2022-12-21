@@ -5,35 +5,16 @@
   width: 100%;
   display: flex;
   align-items: center;
+  max-width: 450px;
 }
 
 .wrapper {
-  height: 96%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   color: $white;
   position: relative;
-
-  &.right {
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
-  }
-
-  &.left {
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-  }
-
-  &.top {
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
-  }
-
-  &.left {
-    border-top-right-radius: 3%;
-    border-top-right-radius: 3%;
-  }
 
   button {
     height: 70%;
@@ -62,8 +43,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: left;
-      padding: 3%;
       border-bottom: 1px solid $color_d;
+      height: 7%;
+      min-height: 50px;
+      padding: 0 3%;
 
 
       button {
@@ -71,6 +54,7 @@
         gap: 8%;
 
         svg {
+          height: 80%;
         }
 
         span {

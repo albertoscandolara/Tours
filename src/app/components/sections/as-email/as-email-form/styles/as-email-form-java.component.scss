@@ -2,4 +2,10 @@
 
 .wrapper.java {
   background-color: $color_oasis_stream_approx;
+
+  .privacy-disclaimer {
+    color: $black;
+    border-color: $color_java_approx;
+    background-color: $color_riptide_approx;
+  }
 }

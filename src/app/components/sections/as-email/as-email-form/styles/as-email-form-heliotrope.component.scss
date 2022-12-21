@@ -2,4 +2,10 @@
 
 .wrapper.heliotrope {
   background-color: $color_plasma_trail_approx;
+
+  .privacy-disclaimer {
+    color: $black;
+    border-color: $color_heliotrope_approx;
+    background-color: $color_glicine_approx;
+  }
 }
