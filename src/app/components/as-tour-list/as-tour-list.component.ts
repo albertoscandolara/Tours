@@ -1,3 +1,4 @@
+import { trigger, transition, style, animate } from '@angular/animations';
 import { outputAst } from '@angular/compiler';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { STRING_EMPTY } from 'src/app/constants/constants';
@@ -14,6 +15,18 @@ import { TranslationsService } from 'src/app/services/translations-service/trans
     './styles/as-tour-list-heliotrope.component.scss',
     './styles/as-tour-list-java.component.scss',
     './styles/as-tour-list-watermelon.component.scss',
+  ],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('300ms ease-in', style({ opacity: 0 })),
+      ]),
+    ]),
   ],
 })
 export class AsTourListComponent {

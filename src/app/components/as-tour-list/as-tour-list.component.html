@@ -14,7 +14,7 @@
 </ng-container>
 
 <ng-container *ngIf="isModalOpen">
-  <as-modal (OnClose)="onModalClose()">
+  <as-modal (OnClose)="onModalClose()" [@fadeInOut]>
     <as-action [Tour]="Tour" (OnClose)="onModalClose()"></as-action>
   </as-modal>
 </ng-container>

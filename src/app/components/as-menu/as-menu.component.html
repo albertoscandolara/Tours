@@ -17,7 +17,7 @@
 </section>
 
 <ng-container *ngIf="isModalOpen">
-  <as-modal (OnClose)="onModalClose()">
+  <as-modal (OnClose)="onModalClose()" [@fadeInOut]>
     <as-action [action]="currentAction" [color]="colors.DARK" (OnClose)="onModalClose()"></as-action>
   </as-modal>
 </ng-container>
