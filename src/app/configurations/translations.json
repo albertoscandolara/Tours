@@ -177,6 +177,30 @@
       }
     },
     {
+      "key": "Period",
+      "value": {
+        "en-US": "Period",
+        "it-IT": "Periodo",
+        "fr-FR": "Période"
+      }
+    },
+    {
+      "key": "Price",
+      "value": {
+        "en-US": "Price",
+        "it-IT": "Costo",
+        "fr-FR": "Prix"
+      }
+    },
+    {
+      "key": "Services",
+      "value": {
+        "en-US": "Services",
+        "it-IT": "Service",
+        "fr-FR": "Services"
+      }
+    },
+    {
       "key": "Start date",
       "value": {
         "en-US": "Start date",
@@ -294,6 +318,134 @@
         "en-US": "See stops on the map",
         "it-IT": "Visualizza tappe sulla mappa",
         "fr-FR": "Voir les étapes sur la carte"
+      }
+    },
+    {
+      "key": "From",
+      "value": {
+        "en-US": "From",
+        "it-IT": "Da",
+        "fr-FR": "De"
+      }
+    },
+    {
+      "key": "To",
+      "value": {
+        "en-US": "To",
+        "it-IT": "A",
+        "fr-FR": "À"
+      }
+    },
+    {
+      "key": "Single",
+      "value": {
+        "en-US": "Single",
+        "it-IT": "Singolo",
+        "fr-FR": "Seul"
+      }
+    },
+    {
+      "key": "Couple",
+      "value": {
+        "en-US": "Couple",
+        "it-IT": "Coppia",
+        "fr-FR": "Couple"
+      }
+    },
+    {
+      "key": "Rome",
+      "value": {
+        "en-US": "Rome",
+        "it-IT": "Roma",
+        "fr-FR": "Rome"
+      }
+    },
+    {
+      "key": "Lake Bracciano",
+      "value": {
+        "en-US": "Lake Bracciano",
+        "it-IT": "Lago di Bracciano",
+        "fr-FR": "Lac de Bracciano"
+      }
+    },
+    {
+      "key": "Narni",
+      "value": {
+        "en-US": "Narni",
+        "it-IT": "Narni",
+        "fr-FR": "Narni"
+      }
+    },
+    {
+      "key": "Spoleto",
+      "value": {
+        "en-US": "Spoleto",
+        "it-IT": "Spoleto",
+        "fr-FR": "Spolète"
+      }
+    },
+    {
+      "key": "Assisi",
+      "value": {
+        "en-US": "Assisi",
+        "it-IT": "Assisi",
+        "fr-FR": "Assise"
+      }
+    },
+    {
+      "key": "Perugia",
+      "value": {
+        "en-US": "Perugia",
+        "it-IT": "Perugia",
+        "fr-FR": "Pérouse"
+      }
+    },
+    {
+      "key": "Passignano sul Trasimeno",
+      "value": {
+        "en-US": "Passignano sul Trasimeno",
+        "it-IT": "Passignano sul Trasimeno",
+        "fr-FR": "Passignano sur Trasimène"
+      }
+    },
+    {
+      "key": "Lake Trasimeno",
+      "value": {
+        "en-US": "Lake Trasimeno",
+        "it-IT": "Lago Trasimeno",
+        "fr-FR": "Lac Trasimène"
+      }
+    },
+    {
+      "key": "Cortona",
+      "value": {
+        "en-US": "Cortona",
+        "it-IT": "Cortona",
+        "fr-FR": "Cortone"
+      }
+    },
+    {
+      "key": "Serre di Rapolano",
+      "value": {
+        "en-US": "Serre di Rapolano",
+        "it-IT": "Serre di Rapolano",
+        "fr-FR": "Serre di Rapolano"
+      }
+    },
+    {
+      "key": "San Gimignano",
+      "value": {
+        "en-US": "San Gimignano",
+        "it-IT": "San Gimignano",
+        "fr-FR": "San Gimignano"
+      }
+    },
+    {
+      "key": "Lucca",
+      "value": {
+        "en-US": "Lucca",
+        "it-IT": "Lucca",
+        "fr-FR": "Lucques"
       }
     }
   ]

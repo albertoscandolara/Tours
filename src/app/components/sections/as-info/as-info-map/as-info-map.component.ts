@@ -51,7 +51,7 @@ export class AsInfoMapComponent implements AfterViewInit {
   ngAfterViewInit() {
     this._initMap();
     this.drawPolyline();
-    this._drawPath();
+    this._drawMarkerPath();
   }
 
   /**
@@ -68,9 +68,9 @@ export class AsInfoMapComponent implements AfterViewInit {
     }).addTo(this._map);
   }
 
-  private _drawPath(): void {
+  private _drawMarkerPath(): void {
     const stops: Array<Stop> = this.Tour.stops.filter(
-      (stop) => stop.coordinates?.lat && stop.coordinates?.lng
+      (stop) => stop.map.checkpoint && stop.map.coordinates
     );
 
     stops.forEach((stop, index) => {
@@ -85,7 +85,7 @@ export class AsInfoMapComponent implements AfterViewInit {
    * @returns {void}
    */
   private _drawMarker(stop: Stop) {
-    const point: any = stop.coordinates;
+    const point: any = stop.map.coordinates;
 
     const isLastStop: boolean =
       this.Tour.stops.indexOf(stop) === this.Tour.stops.length - 1;
@@ -127,10 +127,9 @@ export class AsInfoMapComponent implements AfterViewInit {
    * @returns {void}
    */
   private drawPolyline(): void {
-    const points: any = this.Tour.stops.map((stop) => [
-      stop.coordinates?.lat,
-      stop.coordinates?.lng,
-    ]);
+    const points: any = this.Tour.stops
+      .filter((stop) => stop.map.coordinates)
+      .map((stop) => [stop.map.coordinates?.lat, stop.map.coordinates?.lng]);
 
     const color = Object.entries(this._circleMarkerColorDictionary).find(
       ([key, value]) => key === this.Tour.color

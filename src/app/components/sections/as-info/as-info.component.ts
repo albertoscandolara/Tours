@@ -1,3 +1,4 @@
+import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, Input } from '@angular/core';
 import { Tour } from 'src/app/models/tour';
 import { Sections } from './enums/sections';
@@ -10,6 +11,18 @@ import { Sections } from './enums/sections';
     './styles/as-info-heliotrope.component.scss',
     './styles/as-info-java.component.scss',
     './styles/as-info-watermelon.component.scss',
+  ],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ transform: 'translateX(100%)' }),
+        animate('300ms ease-in', style({ transform: 'translateX(0%)' })),
+      ]),
+      transition(':leave', [
+        style({ transform: 'translateX(0%)' }),
+        animate('300ms ease-in', style({ transform: 'translateX(-100%)' })),
+      ]),
+    ]),
   ],
 })
 export class AsInfoComponent {

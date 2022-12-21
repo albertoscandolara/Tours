@@ -1,30 +1,30 @@
-<section class="wrapper {{Tour.color}}">
+<section class="wrapper {{tour.color}}">
   <div class="paragraph">
-    <span class="title">Period:</span>
-    <span>from {{Tour.period.start | date: 'fullDate'}}</span>
-    <span>to {{Tour.period.end | date: 'fullDate'}}.</span>
+    <span class="title">{{ translationsService.translate('Period') }}:</span>
+    <span>{{ translationsService.translate('From') | lowercase }} {{tour.period.start | date: 'fullDate'}}</span>
+    <span>{{ translationsService.translate('To') | lowercase }} {{tour.period.end | date: 'fullDate'}}.</span>
   </div>
   <div class="paragraph">
-    <span class="title">Price:</span>
-    <span>{{Tour.price.single}} {{Tour.price.currency}} single</span>
-    <span>{{Tour.price.couple}} {{Tour.price.currency}} couple</span>
+    <span class="title">{{ translationsService.translate('Price') }}:</span>
+    <span>{{tour.price.single}} {{tour.price.currency}} {{ translationsService.translate('Single') | lowercase }}</span>
+    <span>{{tour.price.couple}} {{tour.price.currency}} {{ translationsService.translate('Couple') | lowercase }}</span>
   </div>
   <div class="paragraph">
-    <span class="title">Stops:</span>
+    <span class="title">{{ translationsService.translate('Stops') }}:</span>
     <ul>
-      <ng-container *ngFor="let stop of Tour.stops">
+      <ng-container *ngFor="let stop of stops">
         <li>
-          <span>{{stop.name}}</span>
+          <span>{{ translationsService.translate(stop.name) }}</span>
         </li>
       </ng-container>
     </ul>
   </div>
   <div class="paragraph">
-    <span class="title">Services:</span>
+    <span class="title">{{ translationsService.translate('Services') }}:</span>
     <ul>
-      <ng-container *ngFor="let service of Tour.services">
+      <ng-container *ngFor="let service of tour.services">
         <li>
-          <span>{{service}}</span>
+          <span>{{ translationsService.translate(service) }}</span>
         </li>
       </ng-container>
     </ul>

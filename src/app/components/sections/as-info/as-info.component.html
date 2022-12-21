@@ -7,11 +7,11 @@
     </div>
     <div class="body">
       <ng-container *ngIf="section === sections.DETAILS">
-        <as-info-details [Tour]="Tour">
+        <as-info-details [Tour]="Tour" [@slideInOut]>
         </as-info-details>
       </ng-container>
       <ng-container *ngIf="section === sections.MAP">
-        <as-info-map [Tour]="Tour">
+        <as-info-map [Tour]="Tour" [@slideInOut]>
         </as-info-map>
       </ng-container>
     </div>

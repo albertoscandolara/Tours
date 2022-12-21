@@ -55,10 +55,13 @@ interface Price {
 
 export interface Stop {
   name: string;
-  coordinates?: Coordinates;
+  map: {
+    checkpoint: boolean;
+    coordinates?: Coordinates;
+  };
 }
 
-interface Coordinates {
+export interface Coordinates {
   lat: number;
   lng: number;
 }

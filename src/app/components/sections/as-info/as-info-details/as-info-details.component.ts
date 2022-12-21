@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Tour } from 'src/app/models/tour';
+import { Stop, Tour } from 'src/app/models/tour';
+import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 
 @Component({
   selector: 'as-info-details',
@@ -13,12 +14,25 @@ import { Tour } from 'src/app/models/tour';
 })
 export class AsInfoDetailsComponent {
   /**
+   * Array of named stops
+   */
+  public stops: Array<Stop> = [];
+
+  /**
    * Current tour
    */
-  @Input() Tour: Tour;
+  public tour: Tour;
 
   /**
    * Constructor
    */
-  constructor() {}
+  constructor(public translationsService: TranslationsService) {}
+
+  /**
+   * Tour setter
+   */
+  @Input() set Tour(tour: Tour) {
+    this.tour = tour;
+    this.stops = this.tour.stops.filter((stop) => stop.name);
+  }
 }
