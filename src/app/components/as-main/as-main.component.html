@@ -3,7 +3,7 @@
   <as-tours-list></as-tours-list>
   <ng-container *ngIf="isMenuOpen">
     <as-side-modal [side]="sides.LEFT">
-      <as-menu (OnClose)="onToggle()"></as-menu>
+      <as-menu (OnClose)="onToggle()" [@slideInOut]></as-menu>
     </as-side-modal>
   </ng-container>
 </section>
