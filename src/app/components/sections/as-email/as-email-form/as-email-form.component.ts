@@ -188,7 +188,12 @@ export class AsEmailFormComponent implements OnInit {
 
     this.emailForm.controls['tourId'].setValue(this.Tour.id);
     this.emailForm.controls['tourTitle'].setValue(this.Tour.title);
-    this.emailForm.controls['stops'].setValue(this.Tour.stops.join(', '));
+    this.emailForm.controls['stops'].setValue(
+      this.Tour.stops
+        .filter((stop) => stop.name)
+        .map((stop) => stop.name)
+        .join(', ')
+    );
     this.emailForm.controls['start'].setValue(`${this.Tour.period.start}`);
     this.emailForm.controls['end'].setValue(`${this.Tour.period.end}`);
   }
