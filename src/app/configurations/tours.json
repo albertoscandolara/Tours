@@ -156,7 +156,14 @@
         "Visit to towns/vineries/agriturismo/bread making/cheese making, depending on availability and preferences to the group",
         "Entry to Vinaria"
       ],
-      "imagesSignatures": ["Race.jpg", "Rider.jpg", "Riders.jpg"],
+      "imagesSignatures": [
+        "Race.jpg",
+        "Rearview mirror.png",
+        "Riders 01.png",
+        "Riders 02.jpg",
+        "Riders 03.jpg",
+        "Siena - Piazza del campo.png"
+      ],
       "visible": true,
       "previewImageSignature": "Race.jpg"
     },
@@ -317,11 +324,27 @@
         "Entry to L'Eroica"
       ],
       "imagesSignatures": [
+        "Before the start.png",
+        "Bikes.png",
+        "Bouffet.png",
+        "Brolio Castle.png",
+        "Circuit.png",
+        "Colnago.png",
         "Hill.jpg",
+        "Hills 01.png",
         "Moment.jpg",
         "Race.jpg",
+        "Riders 01.png",
+        "Riders 02.png",
+        "Riders 03.png",
+        "Riders 04.jpeg",
+        "Riders 05.png",
+        "Riders 06.jpeg",
         "Road.jpg",
-        "Vineyards.jpg"
+        "Siena - Piazza del campo.png",
+        "Start.png",
+        "Vineyards.jpg",
+        "Wine.png"
       ],
       "visible": true,
       "previewImageSignature": "Road.jpg"
