@@ -369,6 +369,86 @@
       }
     },
     {
+      "key": "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
+      "value": {
+        "en-US": "Airport pick-ups (Rome); drop off at the airport/city in Pisa or Florence",
+        "it-IT": "Recupero dagli aeroporti (Roma); Accompagnamento all'aeroporto/città di Pisa o Firenze",
+        "fr-FR": "Récupération dans les aéroports (Rome); Accompagnement à l’aéroport/ville de Pise ou Florence"
+      }
+    },
+    {
+      "key": "Bike rental (any kind: gravel, MTB, e-bike, vintage)",
+      "value": {
+        "en-US": "Bike rental (any kind: gravel, MTB, e-bike, vintage)",
+        "it-IT": "Noleggio bici (qualsiasi tipo: gravel, MTB, e-bike, vintage)",
+        "fr-FR": "Location de vélos (tout type: gravier, VTT, e-bike, vintage)"
+      }
+    },
+    {
+      "key": "Training advice if needed",
+      "value": {
+        "en-US": "Training advice if needed",
+        "it-IT": "Consigli per l'allenamento se necessari",
+        "fr-FR": "Conseils d’entraînement si nécessaire"
+      }
+    },
+    {
+      "key": "Hotel (single room or double/+ for couples/families) 7 nights",
+      "value": {
+        "en-US": "Hotel (single room or double/+ for couples/families) 7 nights",
+        "it-IT": "Hotel (camera singola o doppia/+ per coppie/famiglie) 7 notti",
+        "fr-FR": "Hôtel (chambre simple ou double/+ pour couples/familles) 7 nuits"
+      }
+    },
+    {
+      "key": "Guides on the bike",
+      "value": {
+        "en-US": "Guides on the bike",
+        "it-IT": "Guide in bici",
+        "fr-FR": "Guides sur le vélo"
+      }
+    },
+    {
+      "key": "Mechanical- transport assistance (van)",
+      "value": {
+        "en-US": "Mechanical - transport assistance (van)",
+        "it-IT": "Assistenza meccanica - trasporto (furgone)",
+        "fr-FR": "Assistance mécanique - transport (fourgonnette)"
+      }
+    },
+    {
+      "key": "Breakfast, lunch and dinner (drinks excluded)",
+      "value": {
+        "en-US": "Breakfast, lunch and dinner (drinks excluded)",
+        "it-IT": "Colazione, pranzo e cena (bevande escluse)",
+        "fr-FR": "Petit-déjeuner, déjeuner et dîner (boissons exclues)"
+      }
+    },
+    {
+      "key": "Visit to towns/vineries/agriturismo/bread making/cheese making (depending on availability and group preferences)",
+      "value": {
+        "en-US": "Visit to towns/vineries/agriturismo/bread making/cheese making (depending on availability and group preferences)",
+        "it-IT": "Visita a città/cantine/agriturismi/panificazione/caseificio (a seconda della disponibilità e delle preferenze del gruppo)",
+        "fr-FR": "Visite de villes/vignobles/agritourisme/fabrication de pain/fabrication de fromage (selon la disponibilité et les préférences du groupe)"
+      }
+    },
+    {
+      "key": "Entry to Vinaria",
+      "value": {
+        "en-US": "Entry to Vinaria",
+        "it-IT": "Ingresso a Vinaria",
+        "fr-FR": "Entrée à Vinaria"
+      }
+    },
+    {
+      "key": "Entry to L'Eroica",
+      "value": {
+        "en-US": "Entry to L'Eroica",
+        "it-IT": "Ingresso a L'Eroica",
+        "fr-FR": "Entrée à L'Eroica"
+      }
+    },
+    {
       "key": "Rome",
       "value": {
         "en-US": "Rome",
