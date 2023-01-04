@@ -1,6 +1,14 @@
 <ng-container *ngIf="Tour">
-  <div class="item {{Tour.color || Colors.WATERMELON}}"
-    [ngStyle]="{'background-image': 'url(' + Tour.previewImageSignature + ')' }">
+  <div class="item {{Tour.color || Colors.WATERMELON}}">
+    <ul class="background-images">
+      <ng-container *ngFor="let image of backgroundImages; let i = index">
+        <ng-container *ngIf="i === currentBackgroundImageIndex">
+          <li [@fadeInOutBckImg] class="background-image">
+            <img [src]="image.src">
+          </li>
+        </ng-container>
+      </ng-container>
+    </ul>
     <as-menu-item [Color]="Tour.color || Colors.WATERMELON" [IsOpen]="Tour.mainMenuOpen || false"
       (OnToggleMenu)="onToggleMenu()" (OnClickGallery)="onClickGallery()" (OnClickInfo)="onClickInfo()"
       (OnClickEmail)="onClickEmail()">

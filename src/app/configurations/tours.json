@@ -156,16 +156,33 @@
         "Visit to towns / vineries / agriturismo / bread making / cheese making (depending on availability and group preferences)",
         "Entry to Vinaria"
       ],
-      "imagesSignatures": [
-        "Race.jpg",
-        "Rearview mirror.png",
-        "Riders 01.png",
-        "Riders 02.jpg",
-        "Riders 03.jpg",
-        "Siena - Piazza del campo.png"
+      "images": [
+        {
+          "src": "Race.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Rearview mirror.png",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 01.png",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 02.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 03.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Siena - Piazza del campo.png",
+          "showPreview": true
+        }
       ],
-      "visible": true,
-      "previewImageSignature": "Race.jpg"
+      "visible": true
     },
     {
       "id": 2,
@@ -323,31 +340,89 @@
         "Visit to towns / vineries / agriturismo / bread making / cheese making (depending on availability and group preferences)",
         "Entry to L'Eroica"
       ],
-      "imagesSignatures": [
-        "Before the start.png",
-        "Bikes.png",
-        "Bouffet.png",
-        "Brolio Castle.png",
-        "Circuit.png",
-        "Colnago.png",
-        "Hill.jpg",
-        "Hills 01.png",
-        "Moment.jpg",
-        "Race.jpg",
-        "Riders 01.png",
-        "Riders 02.png",
-        "Riders 03.png",
-        "Riders 04.jpeg",
-        "Riders 05.png",
-        "Riders 06.jpeg",
-        "Road.jpg",
-        "Siena - Piazza del campo.png",
-        "Start.png",
-        "Vineyards.jpg",
-        "Wine.png"
+      "images": [
+        {
+          "src": "Before the start.png",
+          "showPreview": true
+        },
+        {
+          "src": "Bikes.png",
+          "showPreview": true
+        },
+        {
+          "src": "Bouffet.png",
+          "showPreview": true
+        },
+        {
+          "src": "Brolio Castle.png",
+          "showPreview": true
+        },
+        {
+          "src": "Circuit.png",
+          "showPreview": true
+        },
+        {
+          "src": "Hill.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Hills 01.png",
+          "showPreview": true
+        },
+        {
+          "src": "Moment.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Race.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 01.png",
+          "showPreview": false
+        },
+        {
+          "src": "Riders 02.png",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 03.png",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 04.jpeg",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 05.png",
+          "showPreview": true
+        },
+        {
+          "src": "Riders 06.jpeg",
+          "showPreview": true
+        },
+        {
+          "src": "Road.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Siena - Piazza del campo.png",
+          "showPreview": true
+        },
+        {
+          "src": "Start.png",
+          "showPreview": true
+        },
+        {
+          "src": "Vineyards.jpg",
+          "showPreview": true
+        },
+        {
+          "src": "Wine.png",
+          "showPreview": true
+        }
       ],
-      "visible": true,
-      "previewImageSignature": "Road.jpg"
+      "visible": true
     }
   ]
 }

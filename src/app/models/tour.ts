@@ -9,12 +9,11 @@ export interface Tour {
   description: string;
   price: Price;
   services: Array<string>;
-  imagesSignatures: Array<string>;
+  images: Array<Image>;
   mainMenuOpen: boolean;
   visible: boolean;
   currentAction: string;
   color: COLORS;
-  previewImageSignature?: string;
 }
 
 export interface TourConfig {
@@ -25,9 +24,8 @@ export interface TourConfig {
   description: string;
   price: PriceConfig;
   services: Array<string>;
-  imagesSignatures: Array<string>;
+  images: Array<Image>;
   visible?: boolean;
-  previewImageSignature?: string;
   color?: COLORS;
 }
 
@@ -64,4 +62,9 @@ export interface Stop {
 export interface Coordinates {
   lat: number;
   lng: number;
+}
+
+export interface Image {
+  src: string;
+  showPreview: boolean;
 }
