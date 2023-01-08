@@ -1,0 +1,24 @@
+@import '../../../../../styles/built-in-tags.scss';
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  padding: 2%;
+  font-size: 15px;
+
+  .combobox,
+  .profile {
+    &.combobox {}
+
+    &.profile {
+      flex: 1;
+    }
+  }
+}

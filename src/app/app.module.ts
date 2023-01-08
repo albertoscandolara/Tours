@@ -42,11 +42,16 @@ import { AsSideModalComponent } from './components/modals/as-side-modal/as-side-
 import { LanguageService } from './services/language-service/language.service';
 import { TranslationsService } from './services/translations-service/translations.service';
 import { AsLanguagesComponent } from './components/sections/as-languages/as-languages.component';
+import { AsComboboxComponent } from './components/shared/as-combobox/as-combobox.component';
+import { AsAboutUs } from './components/sections/as-about-us/as-about-us.component';
+import { AsProfile } from './components/sections/as-about-us/as-profile/as-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AsAboutUs,
     AsCameraSvgComponent,
+    AsComboboxComponent,
     AsCrossSvgComponent,
     AsDetailsSvgComponent,
     AsEmailSvgComponent,
@@ -76,6 +81,7 @@ import { AsLanguagesComponent } from './components/sections/as-languages/as-lang
     AsEmailProcessingComponent,
     AsEmailSubmissionResultComponent,
     AsLanguagesComponent,
+    AsProfile,
   ],
   imports: [
     CommonModule,

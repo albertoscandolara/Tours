@@ -1,0 +1,72 @@
+@import '../../../../../styles/built-in-tags.scss';
+
+:host {
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+
+  .header,
+  .body {
+    width: 100%;
+
+    &.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+
+      span {
+        flex: 1;
+        text-align: left;
+      }
+      .arrow {
+        width: 10%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrow-icon {
+            width: 50%;
+            height: 100%;
+            content:url("../../../../../assets/icons/arrow-down.svg");
+            transition: all .2s linear;
+
+            &.isOpen {
+              transform: rotate(180deg);
+            }
+        }
+      }
+    }
+
+    &.body {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      .items {
+
+        .item {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+
+          &.selected {
+
+          }
+        }
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    min-height: 50px;
+    padding: 0 3%;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Valentina",
+      "surname": "Scandolara",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "description": "facebook",
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Caio",
+      "surname": "tizio",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "description": "facebook",
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        }
+      ]
+    }
+  ]
+}

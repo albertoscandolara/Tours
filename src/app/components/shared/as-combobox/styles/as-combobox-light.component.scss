@@ -1,0 +1,15 @@
+@import '../../../../../styles/palette.scss';
+
+.wrapper.light {
+
+  .header,
+  .body {
+    background-color: $color_b;
+
+    &.header {
+    }
+
+    &.body {
+    }
+  }
+}

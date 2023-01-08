@@ -23,6 +23,9 @@ export class AsLanguagesComponent {
    */
   @Input() color: COLORS = COLORS.DARK;
 
+  /**
+   * List of available languages
+   */
   public languages: Array<Language> = [];
 
   /**

@@ -1,0 +1,21 @@
+<div class="wrapper {{color}}">
+  <button class="header item" (click)="onToggle()">
+    <span>{{ translationsService.translate(selectedItem.description) }}</span>
+    <button class="arrow">
+      <img class="arrow-icon" [ngClass]="{'isOpen': isOpen}">
+    </button>
+  </button>
+  <ng-container *ngIf="isOpen">
+    <section class="body" [@inOutAnimation]>
+      <ul class="items">
+        <ng-container *ngFor="let item of items">
+          <li class="item" [ngClass]="{'selected': item.id === selectedItem.id}" (click)="onItemChange(item)">
+            <button>
+              <span>{{ translationsService.translate(item.description) }}</span>
+            </button>
+          </li>
+        </ng-container>
+      </ul>
+    </section>
+  </ng-container>
+</div>

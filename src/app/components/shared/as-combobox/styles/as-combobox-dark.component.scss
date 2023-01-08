@@ -1,0 +1,29 @@
+@import '../../../../../styles/palette.scss';
+
+.wrapper.dark {
+
+  .header,
+  .body {
+    background-color: $color_b;
+    color: $light;
+
+    &.header {
+    }
+
+    &.body {
+
+      .items {
+        .item {
+          border-bottom-color: $color_d;
+
+          &.selected {
+            background-color: $color_fuchsia_pink_approx;
+          }
+        }
+      }
+    }
+
+    .item {
+    }
+  }
+}
