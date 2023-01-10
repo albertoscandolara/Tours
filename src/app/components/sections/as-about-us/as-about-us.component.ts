@@ -12,6 +12,7 @@ import { ComboItem } from 'src/app/models/combo-item';
 import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 import { Profile } from 'src/app/models/profile.dto';
 import { COLORS } from 'src/app/enums/colors';
+import { profileImagesFolderPath } from 'src/app/constants/paths';
 
 @Component({
   selector: 'as-about-us',
@@ -31,7 +32,7 @@ export class AsAboutUs {
   /**
    * Current profile
    */
-  public profile: Profile | undefined;
+  public profile: Profile;
 
   /**
    * Combobox items list
@@ -69,14 +70,15 @@ export class AsAboutUs {
    */
   private _setProfile(id: number): void {
     const profiles: Array<Profile> = json.profiles;
-    const profile: Profile | undefined = profiles.find(
-      (profile) => profile.id === id
+    let profile: Profile | undefined = profiles.find(
+      (profile: Profile) => profile.id === id
     );
 
     if (!profile) {
       return;
     }
-    this.profile = undefined;
+
+    profile = this._prefixProfilePics(profile);
     this.profile = profile;
   }
 
@@ -87,5 +89,21 @@ export class AsAboutUs {
    */
   public onItemChange(item: ComboItem): void {
     this._setProfile(item.id);
+  }
+
+  /**
+   * Prefix all profile images if not already prefixed
+   *
+   * @param {Profile} profile current to prefix
+   * @returns {Profile} profile with prefixed images
+   */
+  private _prefixProfilePics(profile: Profile): Profile {
+    const prefix: string = `${profileImagesFolderPath}/${profile.id}/`;
+
+    if (!profile.profileImgSignature.includes(prefix)) {
+      profile.profileImgSignature = `${prefix}${profile.profileImgSignature}`;
+    }
+
+    return profile;
   }
 }

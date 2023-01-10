@@ -51,17 +51,7 @@ export class AsProfile implements OnInit {
    * ngOnInit method
    */
   ngOnInit(): void {
-    this._setProfile();
     this._setContacts();
-  }
-
-  /**
-   * Set profile
-   *
-   * @returns {void}
-   */
-  private _setProfile(): void {
-    this.profile.profileImgSignature = `${profileImagesFolderPath}/${this.profile.id}/${this.profile.profileImgSignature}`;
   }
 
   /**
