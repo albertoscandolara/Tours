@@ -8,7 +8,7 @@ export interface Profile {
 
 interface Contact {
   id: number;
-  description: string;
+  contactId: number;
   enabled: boolean;
   link: string;
 }

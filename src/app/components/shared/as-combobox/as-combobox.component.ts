@@ -70,7 +70,7 @@ export class AsComboboxComponent implements OnInit {
    * have been checked. It is invoked only once when the directive is instantiated.
    */
   ngOnInit(): void {
-    this.selectedItem = this.items[0];
+    this.onItemChange(this.items[0]);
   }
 
   /**
@@ -79,7 +79,13 @@ export class AsComboboxComponent implements OnInit {
    * @returns {void}
    */
   public onItemChange(item: ComboItem): void {
-    if (item.id === this.selectedItem.id) {
+    if (!this.selectedItem) {
+      this.selectedItem = item;
+      this.OnItemChange.emit(this.selectedItem);
+      return;
+    }
+
+    if (this.selectedItem && item.id === this.selectedItem.id) {
       return;
     }
 

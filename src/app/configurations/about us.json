@@ -4,11 +4,17 @@
       "id": 1,
       "name": "Valentina",
       "surname": "Scandolara",
-      "profileImgSignature": "",
+      "profileImgSignature": "Vale Athena.jpg",
       "contacts": [
         {
           "id": 1,
-          "description": "facebook",
+          "contactId": 2,
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        },
+        {
+          "id": 1,
+          "contactId": 5,
           "enabled": true,
           "link": "https://www.facebook.com/valescandolara"
         }
@@ -23,7 +29,7 @@
       "contacts": [
         {
           "id": 1,
-          "description": "facebook",
+          "contactId": 5,
           "enabled": true,
           "link": "https://www.facebook.com/valescandolara"
         }

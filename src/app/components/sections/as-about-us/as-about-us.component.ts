@@ -29,9 +29,9 @@ export class AsAboutUs {
   @Input() color: COLORS = COLORS.DARK;
 
   /**
-   * Profiles list
+   * Current profile
    */
-  public profiles: Array<Profile> = [];
+  public profile: Profile;
 
   /**
    * Combobox items list
@@ -51,8 +51,8 @@ export class AsAboutUs {
    * @returns {void}
    */
   private _setItems(): void {
-    this.profiles = json.profiles;
-    this.items = this.profiles.map(
+    const profiles: Array<Profile> = json.profiles;
+    this.items = profiles.map(
       (profile) =>
         ({
           id: profile.id,
@@ -62,9 +62,30 @@ export class AsAboutUs {
   }
 
   /**
+   * Set current profile
+   *
+   * @param {number} id profile id to load
+   * @returns {void}
+   */
+  private _setProfile(id: number): void {
+    const profiles: Array<Profile> = json.profiles;
+    const profile: Profile | undefined = profiles.find(
+      (profile) => profile.id === id
+    );
+
+    if (!profile) {
+      return;
+    }
+
+    this.profile = profile;
+  }
+
+  /**
    * Handle combobox item change
    *
    * @returns {void}
    */
-  public onItemChange(item: ComboItem): void {}
+  public onItemChange(item: ComboItem): void {
+    this._setProfile(item.id);
+  }
 }

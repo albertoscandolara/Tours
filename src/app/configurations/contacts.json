@@ -1,0 +1,40 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "phone",
+      "description": "Phone",
+      "signature": "call.svg"
+    },
+    {
+      "id": 2,
+      "name": "facebook",
+      "description": "Facebook",
+      "signature": "facebook.svg"
+    },
+    {
+      "id": 3,
+      "name": "github",
+      "description": "Github",
+      "signature": "github.svg"
+    },
+    {
+      "id": 4,
+      "name": "gmail",
+      "description": "Gmail",
+      "signature": "gmail.svg"
+    },
+    {
+      "id": 5,
+      "name": "instagram",
+      "description": "Instagram",
+      "signature": "instagram.svg"
+    },
+    {
+      "id": 6,
+      "name": "linkedin",
+      "description": "Linkedin",
+      "signature": "linkedin.svg"
+    }
+  ]
+}

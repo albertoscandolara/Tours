@@ -1,5 +1,25 @@
 <ng-container *ngIf="profile">
   <section class="wrapper {{color}}">
+    <div class="header">
+      <img class="profile-pic" [src]="profile.profileImgSignature" alt="profile pic">
+      <span class="name">{{ profile.name }} {{ profile.surname }}</span>
+      <div class="contacts">
+        <ul>
+          <ng-container *ngIf="contacts.length">
+            <ng-container *ngFor="let contact of profile.contacts">
+              <ng-container *ngIf="contact.enabled && contact.link && contacts[contact.contactId - 1]">
+                <li>
+                  <a href="contact.link"
+                    [title]="translationsService.translate('Page') + ' ' + contacts[contact.contactId - 1]?.description">
+                    <img class="contact-logo" [src]="contacts[contact.contactId - 1]?.signature" alt="contact logo" />
+                  </a>
+                </li>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
     <span> {{ profile.name}}</span>
   </section>
 </ng-container>
