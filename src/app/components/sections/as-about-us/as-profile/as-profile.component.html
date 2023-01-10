@@ -9,7 +9,7 @@
             <ng-container *ngFor="let contact of profile.contacts">
               <ng-container *ngIf="contact.enabled && contact.link && contacts[contact.contactId - 1]">
                 <li>
-                  <a href="contact.link"
+                  <a [href]="contact.link"
                     [title]="translationsService.translate('Page') + ' ' + contacts[contact.contactId - 1]?.description">
                     <img class="contact-logo" [src]="contacts[contact.contactId - 1]?.signature" alt="contact logo" />
                   </a>
