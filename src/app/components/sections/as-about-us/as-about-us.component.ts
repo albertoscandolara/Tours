@@ -31,7 +31,7 @@ export class AsAboutUs {
   /**
    * Current profile
    */
-  public profile: Profile;
+  public profile: Profile | undefined;
 
   /**
    * Combobox items list
@@ -76,7 +76,7 @@ export class AsAboutUs {
     if (!profile) {
       return;
     }
-
+    this.profile = undefined;
     this.profile = profile;
   }
 

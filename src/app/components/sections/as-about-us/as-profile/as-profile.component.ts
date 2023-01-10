@@ -51,7 +51,6 @@ export class AsProfile implements OnInit {
    * ngOnInit method
    */
   ngOnInit(): void {
-    this._reset();
     this._setProfile();
     this._setContacts();
   }
@@ -62,7 +61,6 @@ export class AsProfile implements OnInit {
    * @returns {void}
    */
   private _setProfile(): void {
-    const prefix: string = `${profileImagesFolderPath}/${this.profile.id}/${this.profile.profileImgSignature}`;
     this.profile.profileImgSignature = `${profileImagesFolderPath}/${this.profile.id}/${this.profile.profileImgSignature}`;
   }
 
@@ -87,15 +85,5 @@ export class AsProfile implements OnInit {
       }
       this.contacts.push(c);
     });
-  }
-
-  /**
-   * Reset component parameters
-   *
-   * @returns {void}
-   */
-  private _reset(): void {
-    this.profile = JSON.parse(JSON.stringify(this.profile));
-    this.contacts = [];
   }
 }
