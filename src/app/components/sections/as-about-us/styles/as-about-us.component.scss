@@ -18,7 +18,7 @@
     &.combobox {}
 
     &.profile {
-      flex: 1;
+      overflow: auto;
     }
   }
 }

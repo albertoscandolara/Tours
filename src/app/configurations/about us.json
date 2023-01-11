@@ -4,6 +4,8 @@
       "id": 1,
       "name": "Valentina",
       "surname": "Scandolara",
+      "nickname": "Valentina",
+      "nationality": "Italy",
       "profileImgSignature": "Vale Athena.jpg",
       "contacts": [
         {
@@ -18,13 +20,15 @@
           "enabled": true,
           "link": "https://www.facebook.com/valescandolara"
         }
-      ]
+      ],
+      "paragraphs": []
     },
-
     {
       "id": 2,
-      "name": "Caio",
-      "surname": "tizio",
+      "name": "Argiro",
+      "surname": "Milaki",
+      "nickname": "",
+      "nationality": "Greece",
       "profileImgSignature": "",
       "contacts": [
         {
@@ -33,7 +37,75 @@
           "enabled": true,
           "link": "https://www.facebook.com/valescandolara"
         }
+      ],
+      "paragraphs": []
+    },
+    {
+      "id": 3,
+      "name": "Roberto",
+      "surname": "Lencioni",
+      "nickname": "Carube",
+      "nationality": "Italy",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "contactId": 5,
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "Roberto Lencioni (“Carube”) is an all round cycling legend. He was Cipollini’s personal and most trusted mechanic."
+        },
+        {
+          "text": "A talented racer in his younger years, he then went on to become a mechanic in the biggest teams of the time – such as Saeco, Domina Vacanze, Naturino, Del Tongo, Jolly Club 88, Universal Caffè, Gis, San Giacomo, Selle San Marco, Alfa Lum, Magniflex, Alba Cucine, Dromedario."
+        },
+        {
+          "text": "He also directed a Professional women’s team, winning the Giro d’Italia with Michela Fanini, and also served as a Team Manager for the National Team of Argentina."
+        },
+        {
+          "text": "He now collaborates with L’Eroica, provides services to Bike Tours, works for Vittoria Servizio Corse in competitive cycling events."
+        },
+        {
+          "text": "He can tell stories for days, it’s just a pleasure – and an incredible honour – to have him with us."
+        }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Luis",
+      "surname": "Iriberri",
+      "nickname": "",
+      "nationality": "Spain",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "contactId": 5,
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        }
+      ],
+      "paragraphs": []
+    },
+    {
+      "id": 5,
+      "name": "Lucia",
+      "surname": "Ambrosi",
+      "nickname": "",
+      "nationality": "Italy",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "contactId": 5,
+          "enabled": true,
+          "link": "https://www.facebook.com/valescandolara"
+        }
+      ],
+      "paragraphs": []
     }
   ]
 }

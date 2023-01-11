@@ -20,6 +20,14 @@
         </ul>
       </div>
     </div>
-    <span> {{ profile.name}}</span>
+    <section class="body">
+      <ul class="paragraphs">
+        <ng-container *ngFor="let paragraph of profile.paragraphs">
+          <li class="paragraph">
+            <p class="text">{{ paragraph.text }}</p>
+          </li>
+        </ng-container>
+      </ul>
+    </section>
   </section>
 </ng-container>

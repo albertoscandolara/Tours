@@ -13,6 +13,7 @@ import { TranslationsService } from 'src/app/services/translations-service/trans
 import { Profile } from 'src/app/models/profile.dto';
 import { COLORS } from 'src/app/enums/colors';
 import { profileImagesFolderPath } from 'src/app/constants/paths';
+import { COUNTRIES } from 'src/app/enums/countries';
 
 @Component({
   selector: 'as-about-us',
@@ -52,7 +53,7 @@ export class AsAboutUs {
    * @returns {void}
    */
   private _setItems(): void {
-    const profiles: Array<Profile> = json.profiles;
+    const profiles: Array<Profile> = this._getProfiles();
     this.items = profiles.map(
       (profile) =>
         ({
@@ -69,7 +70,7 @@ export class AsAboutUs {
    * @returns {void}
    */
   private _setProfile(id: number): void {
-    const profiles: Array<Profile> = json.profiles;
+    const profiles: Array<Profile> = this._getProfiles();
     let profile: Profile | undefined = profiles.find(
       (profile: Profile) => profile.id === id
     );
@@ -105,5 +106,19 @@ export class AsAboutUs {
     }
 
     return profile;
+  }
+
+  /**
+   * Get and cast types for profiles objects
+   *
+   * @returns {Array<Profile>} typed profiles array
+   */
+  private _getProfiles(): Array<Profile> {
+    const profiles: Array<Profile> = json.profiles.map((profile): Profile => {
+      profile.nationality = profile.nationality as COUNTRIES;
+      return profile as Profile;
+    });
+
+    return profiles;
   }
 }
