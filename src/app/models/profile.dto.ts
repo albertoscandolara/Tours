@@ -1,5 +1,9 @@
 import { COUNTRIES } from '../enums/countries';
 
+export interface Purpose {
+  paragraphs: Array<Paragraph>;
+}
+
 export interface Profile {
   id: number;
   name: string;
@@ -20,4 +24,5 @@ interface Contact {
 
 interface Paragraph {
   text: string;
+  images: Array<string>;
 }

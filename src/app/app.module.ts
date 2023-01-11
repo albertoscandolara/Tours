@@ -45,6 +45,7 @@ import { AsLanguagesComponent } from './components/sections/as-languages/as-lang
 import { AsComboboxComponent } from './components/shared/as-combobox/as-combobox.component';
 import { AsAboutUs } from './components/sections/as-about-us/as-about-us.component';
 import { AsProfile } from './components/sections/as-about-us/as-profile/as-profile.component';
+import { AsPurpose } from './components/sections/as-about-us/as-purpose/as-purpose.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { AsProfile } from './components/sections/as-about-us/as-profile/as-profi
     AsEmailSubmissionResultComponent,
     AsLanguagesComponent,
     AsProfile,
+    AsPurpose,
   ],
   imports: [
     CommonModule,

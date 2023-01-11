@@ -2,7 +2,12 @@
   <div class="combobox">
     <as-combobox [items]="items" (OnItemChange)="onItemChange($event)"></as-combobox>
   </div>
-  <div class="profile">
-    <as-profile [profile]="profile"></as-profile>
+  <div class="body">
+    <ng-container *ngIf="profile">
+      <as-profile [profile]="profile"></as-profile>
+    </ng-container>
+    <ng-container *ngIf="!profile">
+      <as-purpose></as-purpose>
+    </ng-container>
   </div>
 </section>

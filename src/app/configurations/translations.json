@@ -553,6 +553,46 @@
       }
     },
     {
+      "key": "Our purpose",
+      "value": {
+        "en-US": "Our purpose",
+        "it-IT": "Il nostro obbiettivo",
+        "fr-FR": "Notre objectif"
+      }
+    },
+    {
+      "key": "We are a composite team of friends, with completely different backgrounds and from several countries. But we all love cycling, especially in Italy, appreciating its tasty composite and vast culture and its food.",
+      "value": {
+        "en-US": "We are a composite team of friends, with completely different backgrounds and from several countries. But we all love cycling, especially in Italy, appreciating its composite and vast culture and its tasty food.",
+        "it-IT": "Siamo una squadra di amici, provenienti da contesti completamente differenti e da diversi paesi. Ma tutti noi amiamo il ciclismo e stare in sella alle nostre bici, specialmente in Italia, apprezzando la sua cultura diversificata e vasta e il suo buon cibo.",
+        "fr-FR": "Nous sommes des amis, de pays différents et avec expériences de vie complètement différents. Mais nous aimons tous pédaler, surtout en Italie, en appréciant sa culture diversifiée et vaste et sa bonne nourriture."
+      }
+    },
+    {
+      "key": "The idea of creating a unique bike tour to give our guests an unforgettable experience with us has been in the air for years now, but between Covid, travel restrictions, and organisational requirements it took a bit longer than originally hoped.",
+      "value": {
+        "en-US": "The idea of creating a unique bike tour to give our guests an unforgettable experience with us has been in the air for years now, but between Covid, travel restrictions, and organisational requirements it took a bit longer than originally hoped.",
+        "it-IT": "L'idea di creare un tour in bici unico per regalare ai nostri ospiti un'esperienza indimenticabile da vivere insieme era nell'aria ormai da anni. Ma, per doversi motivi - Covid, restrizioni di viaggio ed esigenze organizzative -, ci è voluto un po' più di quanto inizialmente sperato.",
+        "fr-FR": "L'idée de créer un tour à vélo unique pour offrir à nos clients une expérience inoubliable avec nous était dans l'air depuis des années maintenant. Mais, pour diverses raisons - Covid, restrictions de voyage et besoins d'organisation -, cela a pris un peu plus de temps qu'espéré initialement."
+      }
+    },
+    {
+      "key": "At long last it can now come to reality!",
+      "value": {
+        "en-US": "At long last it can now come to reality!",
+        "it-IT": "Finalmente ora può diventare realtà!",
+        "fr-FR": "Il peut enfin devenir réalité!"
+      }
+    },
+    {
+      "key": "We strongly believe that our different experiences in work and life will be our biggest strength and will allow us to offer you the best trip you’ve ever had!",
+      "value": {
+        "en-US": "We strongly believe that our different experiences in work and life will be our biggest strength and will allow us to offer you the best trip you’ve ever had!",
+        "it-IT": "Siamo convinti che le nostre diverse esperienze, nel lavoro e nella vita, possano essere il nostro asso nella manica nell'offrirti il miglior viaggio che tu abbia mai fatto!",
+        "fr-FR": "Nous sommes convaincus que nos différentes expériences, dans le travail et dans la vie, peuvent être notre atout pour vous offrir le meilleur voyage que vous ayez jamais eu!"
+      }
+    },
+    {
       "key": "Argiro is a professional cyclist from Greece.",
       "value": {
         "en-US": "Argiro is a professional cyclist from Greece.",

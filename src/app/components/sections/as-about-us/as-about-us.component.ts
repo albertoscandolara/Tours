@@ -33,7 +33,7 @@ export class AsAboutUs {
   /**
    * Current profile
    */
-  public profile: Profile;
+  public profile: Profile | null = null;
 
   /**
    * Combobox items list
@@ -54,13 +54,20 @@ export class AsAboutUs {
    */
   private _setItems(): void {
     const profiles: Array<Profile> = this._getProfiles();
-    this.items = profiles.map(
+
+    const teamItem: ComboItem = {
+      id: 0,
+      description: 'Our purpose',
+    };
+    const profileItems: Array<ComboItem> = profiles.map(
       (profile) =>
         ({
           id: profile.id,
           description: `${profile.name} ${profile.surname}`,
         } as ComboItem)
     );
+
+    this.items = [teamItem, ...profileItems];
   }
 
   /**
@@ -89,7 +96,11 @@ export class AsAboutUs {
    * @returns {void}
    */
   public onItemChange(item: ComboItem): void {
-    this._setProfile(item.id);
+    if (item.id === 0) {
+      this.profile = null;
+    } else {
+      this._setProfile(item.id);
+    }
   }
 
   /**

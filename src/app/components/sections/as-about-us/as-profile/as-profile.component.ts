@@ -9,12 +9,10 @@ import {
 
 import json from '../../../../configurations/contacts.json';
 
-import { ComboItem } from 'src/app/models/combo-item';
 import { TranslationsService } from 'src/app/services/translations-service/translations.service';
 import { Profile } from 'src/app/models/profile.dto';
 import { COLORS } from 'src/app/enums/colors';
 import { Contact } from 'src/app/models/contact.dto';
-import { profileImagesFolderPath } from 'src/app/constants/paths';
 import { contactLogosFolderPath } from 'src/app/constants/paths';
 
 @Component({

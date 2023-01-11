@@ -1,0 +1,18 @@
+<section class="wrapper {{color}}">
+  <section class="body">
+    <ul class="paragraphs">
+      <ng-container *ngFor="let paragraph of purpose.paragraphs">
+        <li class="paragraph">
+          <p class="text">{{ translationsService.translate(paragraph.text) }}</p>
+          <ul>
+            <ng-container *ngFor="let image of paragraph.images">
+              <li>
+                <img [src]="image" alt="quote">
+              </li>
+            </ng-container>
+          </ul>
+        </li>
+      </ng-container>
+    </ul>
+  </section>
+</section>
