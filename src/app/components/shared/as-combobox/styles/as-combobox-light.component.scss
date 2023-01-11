@@ -1,15 +1,33 @@
 @import '../../../../../styles/palette.scss';
 
-.wrapper.light {
+.wrapper.dark {
 
   .header,
   .body {
     background-color: $color_b;
+    color: $light;
 
     &.header {
     }
 
     &.body {
+
+      .items {
+        .item {
+          border-bottom-color: $color_d;
+
+          &:not(.selected):hover {
+            background-color: #202020;
+          }
+
+          &.selected {
+            background-color: $color_fuchsia_pink_approx;
+          }
+        }
+      }
+    }
+
+    .item {
     }
   }
 }

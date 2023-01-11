@@ -16,6 +16,10 @@
         .item {
           border-bottom-color: $color_d;
 
+          &:not(.selected):hover {
+            background-color: #202020;
+          }
+
           &.selected {
             background-color: $color_fuchsia_pink_approx;
           }
