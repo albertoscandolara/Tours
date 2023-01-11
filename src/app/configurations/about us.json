@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Valentina",
       "surname": "Scandolara",
-      "nickname": "Valentina",
+      "nickname": "",
       "nationality": "Italy",
       "profileImgSignature": "Vale Athena.jpg",
       "contacts": [
@@ -63,10 +63,10 @@
           "text": "A talented racer in his younger years, he then went on to become a mechanic in the biggest teams of the time – such as Saeco, Domina Vacanze, Naturino, Del Tongo, Jolly Club 88, Universal Caffè, Gis, San Giacomo, Selle San Marco, Alfa Lum, Magniflex, Alba Cucine, Dromedario."
         },
         {
-          "text": "He also directed a Professional women’s team, winning the Giro d’Italia with Michela Fanini, and also served as a Team Manager for the National Team of Argentina."
+          "text": "He also directed a professional women’s team, winning the Giro d’Italia with Michela Fanini, and also served as a team manager for the National Team of Argentina."
         },
         {
-          "text": "He now collaborates with L’Eroica, provides services to Bike Tours, works for Vittoria Servizio Corse in competitive cycling events."
+          "text": "He now collaborates with L’Eroica, provides services to bike tours, works for Vittoria Servizio Corse in competitive cycling events."
         },
         {
           "text": "He can tell stories for days, it’s just a pleasure – and an incredible honour – to have him with us."
@@ -88,7 +88,17 @@
           "link": "https://www.facebook.com/valescandolara"
         }
       ],
-      "paragraphs": []
+      "paragraphs": [
+        {
+          "text": "Luis is an inhabitant of the world proudly born in Barcelona, Catalonia, Spain."
+        },
+        {
+          "text": "He’s an adventurer and a dreamer, driven by curiosity and a continuous search for challenge. His life path brought him so far from the European aerospace industry, to launching rockets into space in the French Guiana, to a pro cycling career as a skilled race mechanic for top level organizations such as Team Sunweb, USA Cycling or Trek Segafedo."
+        },
+        {
+          "text": "And the best is always still to come."
+        }
+      ]
     },
     {
       "id": 5,
@@ -105,7 +115,20 @@
           "link": "https://www.facebook.com/valescandolara"
         }
       ],
-      "paragraphs": []
+      "paragraphs": [
+        {
+          "text": " Lucia is a Project Manager from Verona, Italy."
+        },
+        {
+          "text": "A former high level soccer player, she started riding a few years ago, and got the bug for it."
+        },
+        {
+          "text": "Once she gets out of the office she can be a bartender, a hostess during events, a scoutmaster for kids, she just loves spending time with people."
+        },
+        {
+          "text": "Charismatic and energetic, she embraced this project with joy and commitment."
+        }
+      ]
     }
   ]
 }

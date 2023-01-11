@@ -3,6 +3,9 @@
     <div class="header">
       <img class="profile-pic" [src]="profile.profileImgSignature" alt="profile pic">
       <span class="name">{{ profile.name }} {{ profile.surname }}</span>
+      <ng-container *ngIf="profile.nickname">
+        <span class="name">( {{ profile.nickname }} )</span>
+      </ng-container>
       <div class="contacts">
         <ul>
           <ng-container *ngIf="contacts.length">
@@ -24,7 +27,7 @@
       <ul class="paragraphs">
         <ng-container *ngFor="let paragraph of profile.paragraphs">
           <li class="paragraph">
-            <p class="text">{{ paragraph.text }}</p>
+            <p class="text">{{ translationsService.translate(paragraph.text) }}</p>
           </li>
         </ng-container>
       </ul>
