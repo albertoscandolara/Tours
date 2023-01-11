@@ -552,7 +552,30 @@
         "fr-FR": "Gaiole in Chianti"
       }
     },
-
+    {
+      "key": "Argiro is a professional cyclist from Greece.",
+      "value": {
+        "en-US": "Argiro is a professional cyclist from Greece.",
+        "it-IT": "Argiro è una ciclista professionista proveniente dalla Grecia.",
+        "fr-FR": "Argiro est une cycliste professionnelle grecque."
+      }
+    },
+    {
+      "key": "She raced all over the world for international teams, competing for a long time in paracycling as a tandem pilot, winning a World Cup and participating in the London 2012 and Rio 2016 Olympics. She then switched to track (individual cycling) after Tokio 2020.",
+      "value": {
+        "en-US": "She raced all over the world for international teams, competing for a long time in paracycling as a tandem pilot, winning a World Cup and participating in the London 2012 and Rio 2016 Olympics. She then switched to track (individual cycling) after Tokio 2020.",
+        "it-IT": "Ha corso per team internazionali per tutto il mondo, gareggiando un lungo periodo nel paraciclismo come pilota di tandem, vincendo una coppa del mondo e partecipando alle Olimpiaci di Londra 2012 e di Rio 2016. Dopo Tokyo 2020 si è specializzata sul ciclismo individuale su pista.",
+        "fr-FR": "Elle a couru partout dans le monde pour des équipes internationales, participant pendant longtemps au paracyclisme en tant que pilote de tandem, en gagnant une Coupe du monde et participant aux Jeux olympiques de Londres 2012 et Rio 2016. Elle est ensuite passée à la piste (cyclisme individuel) après Tokio 2020."
+      }
+    },
+    {
+      "key": "This year she'll team with Valentina in the Denver Disruptors Team, hailing from Colorado, racing track and crits.",
+      "value": {
+        "en-US": "This year she'll team with Valentina in the Denver Disruptors Team, hailing from Colorado, racing track and crits.",
+        "it-IT": "Quest'anno gareggerà insieme a Valentina su pista e nei criterium nel team Denver Disruptors del Colorado (USA).",
+        "fr-FR": "Cette année, elle sera la coéquipière de Valentina sur la piste et dans les critériums dans l’équipe Denver Disruptors du Colorado (USA)."
+      }
+    },
     {
       "key": "Roberto Lencioni (“Carube”) is an all round cycling legend. He was Cipollini’s personal and most trusted mechanic.",
       "value": {
@@ -618,11 +641,35 @@
       }
     },
     {
-      "key": "",
+      "key": "Lucia is a project manager from Verona, Italy.",
       "value": {
-        "en-US": "",
-        "it-IT": "",
-        "fr-FR": ""
+        "en-US": "Lucia is a project manager from Verona, Italy.",
+        "it-IT": "Lucia è una project manager proveniente da Verona, Italia.",
+        "fr-FR": "Lucia est une chef de projet de Vérone, en Italie."
+      }
+    },
+    {
+      "key": "A former high level soccer player, she started riding a few years ago, and got the bug for it.",
+      "value": {
+        "en-US": "A former high level soccer player, she started riding a few years ago, and got the bug for it.",
+        "it-IT": "Ex calciatrice di alto livello, ha iniziato ad andare in bici alcuni anni fa e se ne è appassionata.",
+        "fr-FR": "Ancienne footballeuse de haut niveau, elle a commencé le cyclisme il y a quelques années et s’en est passionnée."
+      }
+    },
+    {
+      "key": "Once she gets out of the office she can be a bartender, a hostess during events, a scoutmaster for kids, she just loves spending time with people.",
+      "value": {
+        "en-US": "Once she gets out of the office she can be a bartender, a hostess during events, a scoutmaster for kids, she just loves spending time with people.",
+        "it-IT": "Fuori dall'ufficio può vestire i panni di bartender, hostess per eventi, capo-scout per bambini e molto altro. Ama trascorrere il suo tempo in mezzo alle persone.",
+        "fr-FR": "En dehors du bureau, vous pouvez jouer le rôle de barman, d’hôtesse d’événement, de chef scout pour enfants et bien plus encore. Elle aime passer son temps parmi les gens."
+      }
+    },
+    {
+      "key": "Charismatic and energetic, she embraced this project with joy and commitment.",
+      "value": {
+        "en-US": "Charismatic and energetic, she embraced this project with joy and commitment.",
+        "it-IT": "Carismatica ed energica, ha abbracciato questo progetto con gioia e profondo impegno.",
+        "fr-FR": "Charismatique et énergique, elle a embrassé ce projet avec joie et un profond engagement."
       }
     },
     {

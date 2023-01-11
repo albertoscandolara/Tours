@@ -18,7 +18,7 @@
           "id": 1,
           "contactId": 5,
           "enabled": true,
-          "link": "https://www.facebook.com/valescandolara"
+          "link": "https://www.instagram.com/valescandolara/"
         }
       ],
       "paragraphs": []
@@ -38,7 +38,47 @@
           "link": "https://www.facebook.com/valescandolara"
         }
       ],
-      "paragraphs": []
+      "paragraphs": [
+        {
+          "text": "Argiro is a professional cyclist from Greece."
+        },
+        {
+          "text": "She raced all over the world for international teams, competing for a long time in paracycling as a tandem pilot, winning a World Cup and participating in the London 2012 and Rio 2016 Olympics. She then switched to track (individual cycling) after Tokio 2020."
+        },
+        {
+          "text": "This year she'll team with Valentina in the Denver Disruptors Team, hailing from Colorado, racing track and crits."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Lucia",
+      "surname": "Ambrosi",
+      "nickname": "",
+      "nationality": "Italy",
+      "profileImgSignature": "",
+      "contacts": [
+        {
+          "id": 1,
+          "contactId": 5,
+          "enabled": true,
+          "link": "https://www.instagram.com/luciambr/"
+        }
+      ],
+      "paragraphs": [
+        {
+          "text": "Lucia is a project manager from Verona, Italy."
+        },
+        {
+          "text": "A former high level soccer player, she started riding a few years ago, and got the bug for it."
+        },
+        {
+          "text": "Once she gets out of the office she can be a bartender, a hostess during events, a scoutmaster for kids, she just loves spending time with people."
+        },
+        {
+          "text": "Charismatic and energetic, she embraced this project with joy and commitment."
+        }
+      ]
     },
     {
       "id": 3,
@@ -52,7 +92,7 @@
           "id": 1,
           "contactId": 5,
           "enabled": true,
-          "link": "https://www.facebook.com/valescandolara"
+          "link": ""
         }
       ],
       "paragraphs": [
@@ -85,7 +125,7 @@
           "id": 1,
           "contactId": 5,
           "enabled": true,
-          "link": "https://www.facebook.com/valescandolara"
+          "link": "https://www.instagram.com/iriberricycling/"
         }
       ],
       "paragraphs": [
@@ -97,36 +137,6 @@
         },
         {
           "text": "And the best is always still to come."
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Lucia",
-      "surname": "Ambrosi",
-      "nickname": "",
-      "nationality": "Italy",
-      "profileImgSignature": "",
-      "contacts": [
-        {
-          "id": 1,
-          "contactId": 5,
-          "enabled": true,
-          "link": "https://www.facebook.com/valescandolara"
-        }
-      ],
-      "paragraphs": [
-        {
-          "text": " Lucia is a Project Manager from Verona, Italy."
-        },
-        {
-          "text": "A former high level soccer player, she started riding a few years ago, and got the bug for it."
-        },
-        {
-          "text": "Once she gets out of the office she can be a bartender, a hostess during events, a scoutmaster for kids, she just loves spending time with people."
-        },
-        {
-          "text": "Charismatic and energetic, she embraced this project with joy and commitment."
         }
       ]
     }
