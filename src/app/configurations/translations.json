@@ -553,6 +553,30 @@
       }
     },
     {
+      "key": "Lazio",
+      "value": {
+        "en-US": "Lazio",
+        "it-IT": "Lazio",
+        "fr-FR": "Latium"
+      }
+    },
+    {
+      "key": "Umbria",
+      "value": {
+        "en-US": "Umbria",
+        "it-IT": "Umbria",
+        "fr-FR": "Ombrie"
+      }
+    },
+    {
+      "key": "Tuscany",
+      "value": {
+        "en-US": "Tuscany",
+        "it-IT": "Toscana",
+        "fr-FR": "Toscane"
+      }
+    },
+    {
       "key": "Our purpose",
       "value": {
         "en-US": "Our purpose",

@@ -22,7 +22,7 @@ interface Contact {
   link: string;
 }
 
-interface Paragraph {
+export interface Paragraph {
   text: string;
   images: Array<string>;
 }

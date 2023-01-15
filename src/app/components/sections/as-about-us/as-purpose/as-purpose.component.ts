@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import json from '../../../../configurations/purpose.json';
 
 import { TranslationsService } from 'src/app/services/translations-service/translations.service';
-import { Purpose } from 'src/app/models/profile.dto';
+import { Paragraph, Purpose } from 'src/app/models/profile.dto';
 import { COLORS } from 'src/app/enums/colors';
 import { purposeImagesFolderPath } from 'src/app/constants/paths';
 
@@ -45,8 +45,8 @@ export class AsPurpose implements OnInit {
    * @returns {void}
    */
   private _setPurpose(): void {
-    const purpose = json.purpose;
-    purpose.paragraphs = purpose.paragraphs.map((paragraph) => {
+    const purpose = JSON.parse(JSON.stringify(json.purpose));
+    purpose.paragraphs = purpose.paragraphs.map((paragraph: Paragraph) => {
       paragraph.images = paragraph.images.map(
         (image) => `${purposeImagesFolderPath}/${image}`
       );
