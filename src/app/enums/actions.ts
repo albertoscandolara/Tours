@@ -32,7 +32,7 @@ export const ACTIONS: { [key: string]: Action } = {
   people: {
     id: 4,
     name: 'people',
-    text: 'Who we are',
+    text: 'About us',
     orderBy: 4,
     selector: 'as-people-svg',
   },
