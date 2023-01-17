@@ -7,6 +7,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
+import { formatDate } from '@angular/common';
 
 import { EMAIL, STRING_EMPTY } from 'src/app/constants/constants';
 
@@ -101,8 +102,14 @@ export class AsEmailFormComponent implements OnInit {
       tourId: new FormControl(-1, [Validators.required]),
       tourTitle: new FormControl(STRING_EMPTY, [Validators.required]),
       stops: new FormControl(STRING_EMPTY, [Validators.required]),
-      start: new FormControl(STRING_EMPTY, [Validators.required]),
-      end: new FormControl(STRING_EMPTY, [Validators.required]),
+      start: new FormControl([
+        formatDate(this.Tour.period.start, 'yyyy-MM-dd', 'en'),
+        [Validators.required],
+      ]),
+      end: new FormControl([
+        formatDate(this.Tour.period.end, 'yyyy-MM-dd', 'en'),
+        [Validators.required],
+      ]),
     });
     this._initEmailForm();
   }
@@ -194,7 +201,11 @@ export class AsEmailFormComponent implements OnInit {
         .map((stop) => stop.name)
         .join(', ')
     );
-    this.emailForm.controls['start'].setValue(`${this.Tour.period.start}`);
-    this.emailForm.controls['end'].setValue(`${this.Tour.period.end}`);
+    this.emailForm.controls['start'].setValue(
+      formatDate(this.Tour.period.start, 'yyyy-MM-dd', 'en')
+    );
+    this.emailForm.controls['end'].setValue(
+      formatDate(this.Tour.period.end, 'yyyy-MM-dd', 'en')
+    );
   }
 }

@@ -43,13 +43,13 @@
     </label>
     <label class="hidden">
       <span>{{ translationsService.translate('Start date') }}</span>
-      <input formControlName="start" name='start' type="date"
-        placeholder="{{ translationsService.translate('Start date') }}" />
+      <input formControlName="start" name='start' type="date" placeholder="{{ Tour.period.start | date:'yyyy-MM-dd' }}"
+        readonly />
     </label>
     <label class="hidden">
       <span>{{ translationsService.translate('End date') }}</span>
-      <input formControlName="end" name='end' type="date"
-        placeholder="{{ translationsService.translate('End date') }}" />
+      <input formControlName="end" name='end' type="date" placeholder="{{ Tour.period.end | date:'yyyy-MM-dd' }}"
+        readonly />
     </label>
 
     <div class="buttons-container">
